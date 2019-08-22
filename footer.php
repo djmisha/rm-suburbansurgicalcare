@@ -12,7 +12,7 @@
 <footer>
 
 	<section class="upper-footer footer-parallax will-parallax parallax-welcome b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-footer.jpg">
-		<span class="the-headline">Contact Us</span>
+		<span class="the-headline">Contact Us </span>
 		<div class="footer-form">
 			<?php echo do_shortcode('[seaforms name="footer-contact-form"]'); ?>
 		</div>
