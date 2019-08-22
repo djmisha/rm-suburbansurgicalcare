@@ -1,0 +1,381 @@
+
+// header,
+// .welcome-parallax,
+.home-aboutus,
+.home-doctor,
+.home-featured-procedures,
+.surgery-through-the-ages,
+footer 
+{
+	// display: none !important;
+}
+
+/*===============================================
+=            Welcome to my Website!             =
+===============================================*/
+
+.welcome-parallax {
+	@include media($desktop) {
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+.welcome {
+	background: #fff url("images/bg-welcome.jpg") top center no-repeat;
+	background-size: cover;
+	background-position-x: right -50px; 
+	z-index: 1000;
+	height: 400px;
+	position: relative;
+	@include media(600px) {
+		background-position-x: right 0px; 
+	}
+	@include media($tablet) {
+		background: #fff url("images/bg-welcome.jpg") top center no-repeat;
+		background-size: cover;
+		height: 700px;
+	}
+	@include media($desktop) {
+		background: none;
+		height: 100vh;
+		min-height: 768px;
+	}
+
+	.welcome-logo {
+		width: 280px;
+		margin: 0 auto;
+		@include media($tablet) {
+			width: auto;
+		}
+		h1 {
+			margin: 0;
+		}
+	}
+
+	.welcome-cta {
+		padding-top: 130px;
+		@include media($tablet) {
+			padding-top: 200px;
+		}
+		@include media($desktop) {
+			padding-top: 35vh;
+		}
+	}
+
+	.mouse-down {
+		display: none;
+		@include media($desktop) {
+			display: block;
+			bottom: 15px;
+			left: 0;
+			right: 0;
+			position: absolute;
+			bottom: 40px;
+		}
+	}
+}
+
+
+/*====================================
+=            home-aboutus            =
+====================================*/
+
+.home-aboutus {
+	background-repeat: no-repeat;
+	background-size: 300px auto; 
+	background-position: center right; 
+	overflow: hidden;
+	text-align: left;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	@include media($tablet) {
+		background-position: bottom right;
+		background-position-y: bottom -90px; 
+		background-size: auto auto;
+		background-position-x: right -300px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	h2 {
+		margin-top: 0;
+		text-align: left;
+		line-height: 40px;
+		margin-bottom: 20px;
+		@include media($tablet) {
+			margin-bottom: 40px;
+		}
+		span {
+			display: block;
+			font-size: 18px;
+			text-transform: uppercase;
+			@include media($tablet) {
+				font-size: 24px
+			}
+		}
+	} 
+	p a {
+		text-decoration: underline;
+		color: $primaryColor;
+	}
+	.button {
+		margin-top: 20px;
+		// border: 1px solid $darkColor;
+	}
+}
+
+
+/*===================================
+=            home-doctor            =
+===================================*/
+
+.home-doctor {
+	background: $darkColor;
+	color: $lightColor;
+	text-align: left;
+	@include media($tablet) {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 85px;
+	}
+	@include media(1660px) {
+		// margin-bottom: 0px;
+	}
+	> div {
+		@include media($tablet) {
+			width: 50%;
+		}
+	}
+	.doc-image {
+		background-position: center;
+		background-size: cover;
+		min-height: 300px;
+	}
+	.doc-content {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
+		@include media($tablet) {
+			padding-top: 50px;
+			padding-bottom: 50px;
+			padding-left: 40px;
+			padding-right: 40px;
+			margin: 0 auto;
+		}
+		@include media($desktop) {
+			padding-top: 100px;
+			padding-bottom: 100px;
+			padding-left: 100px;
+			padding-right: 100px;
+		}
+		h2, p {
+			max-width: 600px;
+		}
+	}
+	h2 {
+		display: block;
+		width: 100%;
+		margin-top: 0;
+		text-align: left;
+		margin-bottom: 20px;
+		@include media($tablet) {
+			margin-bottom: 20px;
+		}
+		span {
+			display: block;
+			font-size: 18px;
+			text-transform: uppercase;
+			@include media($tablet) {
+				font-size: 24px
+			}
+		}
+	} 
+	.button {
+		margin-top: 20px;
+		margin-left: 0;
+	}
+}
+
+
+/*================================================
+=            home-featured-procedures            =
+================================================*/
+
+.home-featured-procedures {
+	color: $lightColor;
+	background: $darkColor;
+	position: relative;
+	.the-overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		right: 0;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 2;
+		background-color: rgba($darkColor, .8);
+		@include media($tablet) {
+			display: none;
+		}
+	}
+	.the-procedure {
+		background-position: center center;
+		background-repeat: no-repeat;
+		text-align: left;
+		padding: 40px;
+		@include media($tablet) {
+			padding: auto;
+		}
+		@include media(1660px) {
+			background-size: cover;
+			background-position: bottom center;
+
+		}
+	}
+	.the-procedure:nth-of-type(1) {
+		padding-top: 100px;
+		background-position: center center;
+		background-position-x: right -200px; 
+		@include media($tablet) {
+			background-position: center center;
+			height: 932px;
+			padding-left: 40px;
+			padding-top: 250px;
+		}
+		@include media($desktop) {
+			padding-left: 15vw;
+		}
+	}
+	.the-procedure:nth-of-type(2) {
+			text-align: left;
+			height: 400px;
+			background-position: center center;
+			background-position-x: left -300px; 
+		@include media($tablet) {
+			background-position: center center;
+			height: 965px;
+			padding-left: 55vw !important;
+			padding-top: 250px;
+		}
+		@include media($desktop) {
+			padding-left: 60vw !important;
+		}
+	}
+	.the-procedure:nth-of-type(3) {
+		height: 500px;
+		background-position: right;
+		background-position-x: right -100px; 
+		@include media($tablet) {
+				height: 831px;
+				padding-left: 40px;
+				padding-top: 200px;
+			}
+			@include media($desktop) {
+			background-position: center center;
+				padding-left: 15vw;
+		}
+	}
+	h2 {
+		margin: 0;
+		font-family: $secondaryFont;
+		z-index: 3 !important;
+		position: relative;
+	}
+	a {
+		display: block;
+		color: $lightColor;
+		text-decoration: none;
+		padding: 10px 15px;
+		border-bottom: 1px solid #4d4d4d;
+		&:hover {
+			background: $lightColor;
+			color: $darkColor;
+			a {
+				color: $darkColor;
+			}
+		}
+	}
+	ul {
+		z-index: 3 !important;
+		position: relative;
+		list-style: none;
+		text-align: left;
+		@include media($tablet) {
+			max-width: 330px;
+		}
+	}
+	li {
+	}
+}
+
+
+/*================================================
+=            surgery-through-the-ages            =
+================================================*/
+
+
+.surgery-through-the-ages {
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	position: relative;
+	@include media($tablet) {
+		height: 790px
+	}
+	@include media($desktop) {
+		height: 790px
+		
+	}
+	.specialty-info {
+		position: absolute;
+		max-width: 350px;
+		right: calc(50% - 500px;);
+		top: 120px;
+		text-align: left;
+		opacity: 0;
+		transition: all .2s ease-in;
+		&.active-info {
+			opacity: 1;
+		}
+	}
+	.specialty-ages {
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		left: 0px;
+		display: flex;
+		justify-content: space-around;
+		height: 190px;
+		align-items: center;
+		background: rgba($darkColor, .8);
+		color: $lightColor;
+		font-size: 27px;
+		> div {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			&:hover, .active-tab {
+				background: $lightColor;
+				color: $darkColor;
+			}
+			&.active-ages {
+				color: $darkColor;
+				background: $lightColor;
+				position: relative;
+				&:before {
+					content: '';
+					top: -60px;
+					left: calc(50% - 30px);
+					position: absolute;
+					border-left: 30px solid transparent;
+					border-right: 30px solid transparent;
+					border-top: 30px solid transparent;
+					border-bottom: 30px solid white;
+				}
+			}
+		}
+	}
+}
