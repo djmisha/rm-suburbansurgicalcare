@@ -81,49 +81,44 @@
 /* FOOTER ADDRESSES */
 /* FOOTER ADDRESSES */
 
-.footer-map {
-	// .footer-splitter {
-	// 	position: relative;
-	// 	@include media($desktop) {
-	// 		// display: flex;
-	// 		// align-items: flex-start;
-	// 	}
-	// }
+.footer-locations {
+	margin-top: 100px;
 	.footer-address {
+		text-align: left;
 		@include media($tablet) {
 			display: flex;
 			justify-content: space-around;
 		}
 		@include media($desktop) {
-			text-align: left;
 		}
+		color: $lightColor;
 		a {
+			color: $lightColor;
 			text-decoration: none;
 			&:hover {
 				text-decoration: underline;
 			}
 		}
-		.loc-name span {
-			font-size: 17px;
-		}
 		.the-loc {
-			&:first-of-type {
-				margin-bottom: 40px;
-				@include media($desktop) {
-					margin-right: 80px;
+			position: relative;
+			margin-bottom: 80px;
+			margin-left: 90px;
+			@include media($desktop) {
+				margin-bottom: 0px;
+			}
+			i {
+				color: $secondaryColor;
+				position: absolute;
+					font-size: 72px;
+					left: -70px;
+				@include media($tablet) {
+					
 				}
 			}
 		}
 		a.loc-map-directions {
 			text-decoration: underline;
-			color: $secondaryColor;
-			i {
-				color: $primaryColor;
-				font-size: 22px;
-				margin-right: 5px;
-				top: 2px;
-				position: relative;
-			}
+			color: $primaryAlt;
 		}
 		.the-loc:nth-of-type(2) {
 			.loc-phone span {display: none;}

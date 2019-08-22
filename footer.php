@@ -12,39 +12,34 @@
 <footer>
 
 	<section class="upper-footer footer-parallax will-parallax parallax-welcome b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-footer.jpg">
-		
 		<span class="the-headline">Contact Us</span>
 		<div class="footer-form">
 			<?php echo do_shortcode('[seaforms name="footer-contact-form"]'); ?>
 		</div>
-	
-		<div class="footer-map">
-			<div class="footer-splitter">
-				 <div class="footer-address">
-					<?php if(have_rows('locations', 'option')): ?>
-						<?php while(have_rows('locations', 'option')): the_row(); ?>
-							<div class="the-loc">
-								<i class="fas fa-map-marker-alt"></i>
-								<a href="<?php the_sub_field('map_link', 'option'); ?>" class="track-outbound loc-name" data-label="Address - Footer" target="_blank"  rel="noopener">
-									<span><?php the_sub_field('name', 'option'); ?></span><br>
-									<?php the_sub_field('address', 'option'); ?><br /> <?php the_sub_field('city', 'option'); ?>
-								</a>
-								<div class="loc-phone">
-									<a href="<?php the_sub_field('phone_link', 'option'); ?>" class="track-outbound" data-label="Phone - Footer">
-										Phone: <?php the_sub_field('phone', 'option'); ?></a>
-										<br>
-										Fax: <?php the_sub_field('fax', 'option'); ?>
-								</div>
-								<a href="<?php the_sub_field('map_link', 'option'); ?>" class="track-outbound loc-map-directions" data-label="Address - Footer" target="_blank" rel="noopener">
-									Map & Directions
-								</a>
+		<div class="footer-locations">
+			 <div class="footer-address">
+				<?php if(have_rows('locations', 'option')): ?>
+					<?php while(have_rows('locations', 'option')): the_row(); ?>
+						<div class="the-loc">
+							<i class="fas fa-map-marker-alt"></i>
+							<span><?php the_sub_field('name', 'option'); ?></span><br>
+							<a href="<?php the_sub_field('map_link', 'option'); ?>" class="track-outbound loc-name" data-label="Address - Footer" target="_blank"  rel="noopener">
+								<?php the_sub_field('address', 'option'); ?><br /> <?php the_sub_field('city', 'option'); ?>
+							</a>
+							<div class="loc-phone">
+								<a href="<?php the_sub_field('phone_link', 'option'); ?>" class="track-outbound" data-label="Phone - Footer">
+									Phone: <?php the_sub_field('phone', 'option'); ?></a>
+									<br>
+									Fax: <?php the_sub_field('fax', 'option'); ?>
 							</div>
-						<?php endwhile; ?>
-					<?php endif; ?>
-				</div>
+							<a href="<?php the_sub_field('map_link', 'option'); ?>" class="track-outbound loc-map-directions" data-label="Address - Footer" target="_blank" rel="noopener">
+								Map & Directions
+							</a>
+						</div>
+					<?php endwhile; ?>
+				<?php endif; ?>
 			</div>
 		</div>
-
 	</section>
 
 
@@ -53,6 +48,7 @@
 			<img data-src="<?php bloginfo('template_directory'); ?>/images/logo-footer.png" alt="logo" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy">
 		</a>
 	</div>
+
 
 	<div class="middle-footer">
 		<div class="footer-social">

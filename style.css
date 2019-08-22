@@ -4387,6 +4387,14 @@ main,
   }
 }
 
+@media only screen and (min-width: 1280px) {
+  section,
+  main,
+  .contain {
+    padding: 0 calc(40px + (50% - (1280px / 2)));
+  }
+}
+
 /* ***************************************** */
 /* --------------- Layouts ----------------- */
 /* ***************************************** */
@@ -4878,7 +4886,6 @@ main,
   color: #ffffff;
   height: 60px;
   text-transform: none;
-  border: 1px solid red;
   font-weight: 600;
 }
 
@@ -6192,8 +6199,17 @@ aside li {
 /* FOOTER ADDRESSES */
 /* FOOTER ADDRESSES */
 /* FOOTER ADDRESSES */
+.footer-locations {
+  margin-top: 100px;
+}
+
+.footer-locations .footer-address {
+  text-align: left;
+  color: #ffffff;
+}
+
 @media only screen and (min-width: 768px) {
-  .footer-map .footer-address {
+  .footer-locations .footer-address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6202,48 +6218,40 @@ aside li {
   }
 }
 
-@media only screen and (min-width: 1080px) {
-  .footer-map .footer-address {
-    text-align: left;
-  }
-}
-
-.footer-map .footer-address a {
+.footer-locations .footer-address a {
+  color: #ffffff;
   text-decoration: none;
 }
 
-.footer-map .footer-address a:hover {
+.footer-locations .footer-address a:hover {
   text-decoration: underline;
 }
 
-.footer-map .footer-address .loc-name span {
-  font-size: 17px;
-}
-
-.footer-map .footer-address .the-loc:first-of-type {
-  margin-bottom: 40px;
+.footer-locations .footer-address .the-loc {
+  position: relative;
+  margin-bottom: 80px;
+  margin-left: 90px;
 }
 
 @media only screen and (min-width: 1080px) {
-  .footer-map .footer-address .the-loc:first-of-type {
-    margin-right: 80px;
+  .footer-locations .footer-address .the-loc {
+    margin-bottom: 0px;
   }
 }
 
-.footer-map .footer-address a.loc-map-directions {
-  text-decoration: underline;
+.footer-locations .footer-address .the-loc i {
   color: #e27500;
+  position: absolute;
+  font-size: 72px;
+  left: -70px;
 }
 
-.footer-map .footer-address a.loc-map-directions i {
-  color: #085287;
-  font-size: 22px;
-  margin-right: 5px;
-  top: 2px;
-  position: relative;
+.footer-locations .footer-address a.loc-map-directions {
+  text-decoration: underline;
+  color: #1dbefa;
 }
 
-.footer-map .footer-address .the-loc:nth-of-type(2) .loc-phone span {
+.footer-locations .footer-address .the-loc:nth-of-type(2) .loc-phone span {
   display: none;
 }
 
@@ -6624,14 +6632,6 @@ footer .footer-logo {
 /* ------------------------
 	Home Page
 ------------------------ */
-.welcome-parallax,
-.home-aboutus,
-.home-doctor,
-.home-featured-procedures,
-.surgery-through-the-ages {
-  display: none !important;
-}
-
 /*===============================================
 =            Welcome to my Website!             =
 ===============================================*/

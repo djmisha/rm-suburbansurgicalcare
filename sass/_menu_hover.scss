@@ -65,10 +65,7 @@ $menuHeight : 60px;
 				color: $lightColor; 
 				height: $menuHeight;
 				text-transform: none;
-				border: 1px solid red;
 				font-weight: 600;
-				// font-family: $secondaryFont;
-				
 				&:hover {
 					color: $darkColor;
 					background: $secondaryAlt;
