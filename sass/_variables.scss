@@ -2,21 +2,28 @@
    Variables
 ------------------------ */
 
+$Blue: #085287;
+$lightBlue: #1dbefa;
+
+$Orange: #e27500;
+
+$contentGrey: #282828;
+
+
+
 $Darker: #1a1a1a;
 $DarkGrey :#4b4b4b;
-$Blue: #214169;
 $yellow: #ffcd4e;
 $white: #fff;
 
-$contentGrey: #707479;
 
 
-$primaryColor: $Darker; // link color, buttons, nav, footer, etc
-$primaryAlt: $DarkGrey; //link hover
+$primaryColor: $Blue; // link color, buttons, nav, footer, etc
+$primaryAlt: $lightBlue; //link hover
 
 $primaryHighlight: $Darker;
 
-$secondaryColor: $Blue;
+$secondaryColor: $Orange;
 $secondaryAlt: $yellow;
 
 $tertiaryColor: $contentGrey;
@@ -27,9 +34,11 @@ $darkColor: #000000;
 
 // Font Family
 
-$primaryFont: filson-pro, sans-serif;
-$secondaryFont: calluna, serif;
-$highlightFont:  filson-pro, sans-serif;
+$primaryFont: 'Open Sans', sans-serif;
+$secondaryFont: 'Lora', serif;
+$highlightFont:  'Lato', sans-serif;
+
+
 
 $sidebar: 350px;
 

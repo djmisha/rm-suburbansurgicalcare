@@ -75,15 +75,15 @@ a.page-numbers.current,
 	text-align: center;
 	text-decoration: none !important;
 	border: none;
-	color: $darkColor;
+	color: $lightColor;
 	font-size: 15px;
 	line-height: 25px;
 	text-transform: none;
 	font-family: $primaryFont;
 	padding: 15px 40px;
 	transition: all 0.2s ease-in-out;
-	background: $secondaryAlt;
-	text-transform: uppercase;
+	background: $primaryColor;
+	text-transform: none;
 	border-radius: 5px;
 	@include media($tablet) {
 		margin-bottom: 0;
@@ -91,7 +91,7 @@ a.page-numbers.current,
 	}
 	&:hover {
 		text-decoration: none;
-		background: $darkColor;
+		background: $secondaryColor;
 		color: $lightColor;
 	}
 }
@@ -140,10 +140,10 @@ a.page-numbers.current,
 //     z-index: 0;
 // }
 
-.disclaimer {
-	font-size: 11px;
-	font-style: italic;
-}
+// .disclaimer {
+// 	font-size: 11px;
+// 	font-style: italic;
+// }
 
 .two-column {
 	@include media($tablet) {

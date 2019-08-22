@@ -202,7 +202,7 @@ footer .seaforms_confirmation_message {
 		}
 		::-webkit-input-placeholder {
 			/* WebKit, Blink, Edge */
-			color: rgba($darkColor, 1);
+			color: rgba($darkColor, .5);
 			font-family: $primaryFont;
 			// font-size: 14px;
 			// text-transform: uppercase;
@@ -211,7 +211,7 @@ footer .seaforms_confirmation_message {
 		}
 		:-moz-placeholder {
 			/* Mozilla Firefox 4 to 18 */
-			color: rgba($darkColor, 1);
+			color: rgba($darkColor, .5);
 			font-family: $primaryFont;
 			// font-size: 14px;
 			// text-transform: uppercase;
@@ -221,7 +221,7 @@ footer .seaforms_confirmation_message {
 		}
 		::-moz-placeholder {
 			/* Mozilla Firefox 19+ */
-			color: rgba($darkColor, 1);
+			color: rgba($darkColor, .5);
 			font-family: $primaryFont;
 			// font-size: 14px;
 			// text-transform: uppercase;
@@ -231,7 +231,7 @@ footer .seaforms_confirmation_message {
 		}
 		:-ms-input-placeholder {
 			/* Internet Explorer 10-11 */
-			color: rgba($darkColor, 1);
+			color: rgba($darkColor, .5);
 			font-family: $primaryFont;
 			// font-size: 14px;
 			// text-transform: uppercase;

@@ -64,10 +64,10 @@ $menuHeight : 60px;
 				transition: .25s ease-in-out background;
 				color: $lightColor; 
 				height: $menuHeight;
-				text-transform: uppercase;
-				// border: 1px solid red;
+				text-transform: none;
+				border: 1px solid red;
+				font-weight: 600;
 				// font-family: $secondaryFont;
-				// text-transform: uppercase;
 				
 				&:hover {
 					color: $darkColor;
