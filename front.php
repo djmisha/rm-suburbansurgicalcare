@@ -5,18 +5,22 @@
 <?php get_header()?>
 
 <div class="welcome-parallax will-parallax parallax-welcome b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-welcome.jpg">
-	<div class="welcome" id="skiptomaincontent">
+	<section class="welcome" id="skiptomaincontent">
+		<div class="welcome-logo">
+			<h1>
+				<a href="<?php bloginfo('url'); ?>"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/logo-header.png" alt=""></a>
+			</h1> 
+		</div>
 		<div class="welcome-cta">
-			<div class="bg-header-cruve-home-mobile"></div>
-			<div class="welcome-logo">
-			<h1><a href="<?php bloginfo('url'); ?>"><div> <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="The Layt Clinic"> </div></a></h1> </div>
+			<h2><?php the_field('welcome_headline'); ?></h2>
+			<?php the_field('welcome_content'); ?>
+			<a href="<?php the_field('learn_more_button'); ?>" class="button" rel="nofollow">Learn More</a>
+			<a href="schedule_a_consultation_button" class="button" rel="nofollow">Schedule a Consultation</a>
 		</div>
-		<div class="mouse-down">
-			<a href="#aboutus" rel="nofollow"><img src="<?php bloginfo('template_directory'); ?>/images/icon-mouse.png" alt=""></a>
-		</div>
-	</div>
+	</section>
 </div> 
 
+<!-- 
 <section id="aboutus" class="home-aboutus b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-about.jpg">
 	<h2><?php the_field('about_headline'); ?></h2>
 	<?php the_field('about_content'); ?>
@@ -76,6 +80,6 @@
 		<?php endif; ?>
 	</div>	
 	<div class="the-overlay"></div>
-</div>
+</div> -->
 
 <?php get_footer()?>

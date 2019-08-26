@@ -3799,11 +3799,11 @@ a.page-numbers.current,
   text-decoration: none !important;
   border: none;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 25px;
   text-transform: none;
   font-family: "Open Sans", sans-serif;
-  padding: 15px 40px;
+  padding: 7px 20px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background: #085287;
@@ -4423,9 +4423,11 @@ main,
     right: 0px;
     display: block;
     top: 0px;
+    background: #085287;
     border-top: 2px solid #e27500;
     -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    position: fixed;
   }
 }
 
@@ -4434,7 +4436,7 @@ main,
 }
 
 .nav-bar nav {
-  background: #085287;
+  margin: 0 auto;
 }
 
 .menu-trigger {
@@ -4442,7 +4444,6 @@ main,
   height: 100%;
   position: absolute;
   right: 0px;
-  background: #000000;
   width: 65px;
 }
 
@@ -4486,9 +4487,8 @@ main,
 }
 
 .locations-trigger {
-  background: #000000;
   position: absolute;
-  width: 100px;
+  width: 60px;
   height: 60px;
   left: 0px;
   top: 0px;
@@ -4512,10 +4512,6 @@ main,
 .locations-trigger i {
   font-size: 25px;
   color: #ffffff;
-}
-
-.locations-trigger i:last-of-type {
-  margin-left: 20px;
 }
 
 .nav-bar-locations {
@@ -4543,6 +4539,7 @@ main,
 
 @media only screen and (min-width: 768px) {
   .nav-bar-locations {
+    width: 90%;
     background: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4553,22 +4550,23 @@ main,
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     top: 15px;
-    left: 0px;
+    left: 20px;
     height: auto;
   }
 }
 
 @media only screen and (min-width: 1080px) {
   .nav-bar-locations {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    top: -35px;
+    width: 250px;
+    position: absolute;
+    right: 0;
+    left: auto;
   }
 }
 
 .nav-bar-locations > div {
-  margin-left: 25px;
+  font-weight: 600;
+  margin-left: 5px;
 }
 
 .nav-bar-locations > div:first-of-type {
@@ -4577,32 +4575,19 @@ main,
 
 @media only screen and (min-width: 768px) {
   .nav-bar-locations > div:first-of-type {
-    padding-top: 0px;
-    margin-right: 40px;
+    padding-right: 10px;
+    padding-left: 5px;
+    border-right: 1px solid #1dbefa;
   }
 }
 
-@media only screen and (min-width: 1080px) {
-  .nav-bar-locations > div:last-of-type {
-    margin-right: 40px;
-  }
-}
-
-.nav-bar-locations i {
-  color: #ffffff;
-  margin-right: 5px;
-  font-size: 16px;
+.nav-bar-locations > div:last-of-type {
+  padding-top: 5px;
 }
 
 @media only screen and (min-width: 768px) {
-  .nav-bar-locations i {
-    font-size: 24px;
-  }
-}
-
-@media only screen and (min-width: 1080px) {
-  .nav-bar-locations i {
-    font-size: 16px;
+  .nav-bar-locations > div:last-of-type {
+    padding-left: 10px;
   }
 }
 
@@ -4612,13 +4597,26 @@ main,
 
 .nav-bar-locations a span {
   font-size: 12px;
-  text-transform: uppercase;
   color: #ffffff;
 }
 
+@media only screen and (min-width: 768px) {
+  .nav-bar-locations a span {
+    display: none;
+  }
+}
+
 .nav-bar-locations .head-phone {
-  color: #ffcd4e;
-  font-size: 18px;
+  color: #ffffff;
+}
+
+.nav-bar-locations svg {
+  width: 17px;
+  height: 28px;
+}
+
+.nav-bar-locations svg path {
+  fill: #e27500;
 }
 
 /* Inside Page Headers */
@@ -4862,8 +4860,8 @@ main,
 }
 
 .hover-menu .main-menu > li:hover > a {
-  color: #000000;
-  background: #ffcd4e;
+  color: #ffffff;
+  background: #1dbefa;
 }
 
 .hover-menu .main-menu > li:hover > .sub-menu {
@@ -4890,8 +4888,8 @@ main,
 }
 
 .hover-menu .main-menu > li a:hover {
-  color: #000000;
-  background: #ffcd4e;
+  color: #ffffff;
+  background: #1dbefa;
 }
 
 .hover-menu a {
@@ -4900,7 +4898,7 @@ main,
 }
 
 .hover-menu .sub-menu {
-  background: #ffcd4e;
+  background: #1dbefa;
   position: absolute;
   top: 60px;
   left: 150px;
@@ -4931,7 +4929,7 @@ main,
 .hover-menu .sub-menu > li.menu-item-has-children:after {
   content: '\f061';
   font-family: 'Font Awesome 5 Pro';
-  color: #000000;
+  color: #ffffff;
   font-size: 10px;
   -webkit-transition: .1s linear all;
   transition: .1s linear all;
@@ -4968,13 +4966,13 @@ main,
 }
 
 .hover-menu .sub-menu > li a {
-  color: #000000;
-  background: #ffcd4e;
+  color: #ffffff;
+  background: #1dbefa;
   padding: 8px 20px !important;
 }
 
 .hover-menu .sub-menu > li:hover > a {
-  color: #000000;
+  color: #ffffff;
   border-bottom: none;
   text-decoration: none;
 }
@@ -4982,7 +4980,7 @@ main,
 .hover-menu .sub-menu a {
   text-align: left;
   height: auto !important;
-  color: #000000;
+  color: #ffffff;
   line-height: 20px;
 }
 
@@ -4994,7 +4992,7 @@ main,
 .hover-menu .mega-menu > .sub-menu {
   display: none;
   width: 800px;
-  border: 1px solid rgba(255, 205, 78, 0.6);
+  border: 1px solid rgba(29, 190, 250, 0.6);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   top: 95px;
@@ -6632,6 +6630,18 @@ footer .footer-logo {
 /* ------------------------
 	Home Page
 ------------------------ */
+.home-aboutus,
+.home-doctor,
+.home-featured-procedures,
+.surgery-through-the-ages,
+.upper-footer,
+.middle-footer,
+.lower-footer,
+.footer-logo,
+.footer-map footer {
+  display: none !important;
+}
+
 /*===============================================
 =            Welcome to my Website!             =
 ===============================================*/
@@ -6645,16 +6655,10 @@ footer .footer-logo {
 .welcome {
   background: #fff url("images/bg-welcome.jpg") top center no-repeat;
   background-size: cover;
-  background-position-x: right -50px;
-  z-index: 1000;
-  height: 400px;
+  background-position-x: right -150px;
+  background-position-y: top 140px;
+  height: 687px;
   position: relative;
-}
-
-@media only screen and (min-width: 600px) {
-  .welcome {
-    background-position-x: right 0px;
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -6668,19 +6672,37 @@ footer .footer-logo {
 @media only screen and (min-width: 1080px) {
   .welcome {
     background: none;
-    height: 100vh;
-    min-height: 768px;
+    height: 930px;
+    min-height: 930px;
   }
 }
 
 .welcome .welcome-logo {
-  width: 280px;
-  margin: 0 auto;
+  padding-top: 70px;
+  width: 100%;
+  max-width: 387px;
+  left: 0;
+  right: 0;
 }
 
 @media only screen and (min-width: 768px) {
   .welcome .welcome-logo {
-    width: auto;
+    max-width: none;
+    padding-top: 115px;
+    width: 387px;
+    height: auto;
+    left: 40px;
+    right: auto;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .welcome .welcome-logo {
+    width: 549px;
+    height: 75px;
+    right: calc(50%);
+    left: auto;
+    padding-top: 115px;
   }
 }
 
@@ -6689,94 +6711,60 @@ footer .footer-logo {
 }
 
 .welcome .welcome-cta {
-  padding-top: 130px;
+  text-align: left;
 }
 
 @media only screen and (min-width: 768px) {
+  .welcome .welcome-cta {
+    max-width: 600px;
+    right: 40px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
   .welcome .welcome-cta {
     padding-top: 200px;
   }
 }
 
-@media only screen and (min-width: 1080px) {
-  .welcome .welcome-cta {
-    padding-top: 35vh;
+.welcome .welcome-cta h2 {
+  margin-top: 0;
+  color: #e27500;
+  font-family: "Lora", serif;
+  font-size: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .welcome .welcome-cta h2 {
+    font-size: 70px;
   }
 }
 
-.welcome .mouse-down {
-  display: none;
+@media only screen and (min-width: 1080px) {
+  .welcome .welcome-cta h2 {
+    font-size: 102px;
+    line-height: 95px;
+  }
+}
+
+.welcome .welcome-cta h2 span {
+  font-weight: 400;
+  letter-spacing: -1px;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  color: #085287;
 }
 
 @media only screen and (min-width: 1080px) {
-  .welcome .mouse-down {
-    display: block;
-    bottom: 15px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    bottom: 40px;
+  .welcome .welcome-cta h2 span {
+    font-size: 50px;
+    line-height: 46px;
   }
 }
 
 /*====================================
 =            home-aboutus            =
 ====================================*/
-.home-aboutus {
-  background-repeat: no-repeat;
-  background-size: 300px auto;
-  background-position: center right;
-  overflow: hidden;
-  text-align: left;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-@media only screen and (min-width: 768px) {
-  .home-aboutus {
-    background-position: bottom right;
-    background-position-y: bottom -90px;
-    background-size: auto auto;
-    background-position-x: right -300px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-.home-aboutus h2 {
-  margin-top: 0;
-  text-align: left;
-  line-height: 40px;
-  margin-bottom: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  .home-aboutus h2 {
-    margin-bottom: 40px;
-  }
-}
-
-.home-aboutus h2 span {
-  display: block;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-@media only screen and (min-width: 768px) {
-  .home-aboutus h2 span {
-    font-size: 24px;
-  }
-}
-
-.home-aboutus p a {
-  text-decoration: underline;
-  color: #085287;
-}
-
-.home-aboutus .button {
-  margin-top: 20px;
-}
-
 /*===================================
 =            home-doctor            =
 ===================================*/
@@ -6874,242 +6862,6 @@ footer .footer-logo {
 /*================================================
 =            home-featured-procedures            =
 ================================================*/
-.home-featured-procedures {
-  color: #ffffff;
-  background: #000000;
-  position: relative;
-}
-
-.home-featured-procedures .the-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-@media only screen and (min-width: 768px) {
-  .home-featured-procedures .the-overlay {
-    display: none;
-  }
-}
-
-.home-featured-procedures .the-procedure {
-  background-position: center center;
-  background-repeat: no-repeat;
-  text-align: left;
-  padding: 40px;
-}
-
-@media only screen and (min-width: 768px) {
-  .home-featured-procedures .the-procedure {
-    padding: auto;
-  }
-}
-
-@media only screen and (min-width: 1660px) {
-  .home-featured-procedures .the-procedure {
-    background-size: cover;
-    background-position: bottom center;
-  }
-}
-
-.home-featured-procedures .the-procedure:nth-of-type(1) {
-  padding-top: 100px;
-  background-position: center center;
-  background-position-x: right -200px;
-}
-
-@media only screen and (min-width: 768px) {
-  .home-featured-procedures .the-procedure:nth-of-type(1) {
-    background-position: center center;
-    height: 932px;
-    padding-left: 40px;
-    padding-top: 250px;
-  }
-}
-
-@media only screen and (min-width: 1080px) {
-  .home-featured-procedures .the-procedure:nth-of-type(1) {
-    padding-left: 15vw;
-  }
-}
-
-.home-featured-procedures .the-procedure:nth-of-type(2) {
-  text-align: left;
-  height: 400px;
-  background-position: center center;
-  background-position-x: left -300px;
-}
-
-@media only screen and (min-width: 768px) {
-  .home-featured-procedures .the-procedure:nth-of-type(2) {
-    background-position: center center;
-    height: 965px;
-    padding-left: 55vw !important;
-    padding-top: 250px;
-  }
-}
-
-@media only screen and (min-width: 1080px) {
-  .home-featured-procedures .the-procedure:nth-of-type(2) {
-    padding-left: 60vw !important;
-  }
-}
-
-.home-featured-procedures .the-procedure:nth-of-type(3) {
-  height: 500px;
-  background-position: right;
-  background-position-x: right -100px;
-}
-
-@media only screen and (min-width: 768px) {
-  .home-featured-procedures .the-procedure:nth-of-type(3) {
-    height: 831px;
-    padding-left: 40px;
-    padding-top: 200px;
-  }
-}
-
-@media only screen and (min-width: 1080px) {
-  .home-featured-procedures .the-procedure:nth-of-type(3) {
-    background-position: center center;
-    padding-left: 15vw;
-  }
-}
-
-.home-featured-procedures h2 {
-  margin: 0;
-  font-family: "Lora", serif;
-  z-index: 3 !important;
-  position: relative;
-}
-
-.home-featured-procedures a {
-  display: block;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 10px 15px;
-  border-bottom: 1px solid #4d4d4d;
-}
-
-.home-featured-procedures a:hover {
-  background: #ffffff;
-  color: #000000;
-}
-
-.home-featured-procedures a:hover a {
-  color: #000000;
-}
-
-.home-featured-procedures ul {
-  z-index: 3 !important;
-  position: relative;
-  list-style: none;
-  text-align: left;
-}
-
-@media only screen and (min-width: 768px) {
-  .home-featured-procedures ul {
-    max-width: 330px;
-  }
-}
-
-/*================================================
-=            surgery-through-the-ages            =
-================================================*/
-.surgery-through-the-ages {
-  background-position: bottom left;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-@media only screen and (min-width: 768px) {
-  .surgery-through-the-ages {
-    height: 790px;
-  }
-}
-
-@media only screen and (min-width: 1080px) {
-  .surgery-through-the-ages {
-    height: 790px;
-  }
-}
-
-.surgery-through-the-ages .specialty-info {
-  position: absolute;
-  max-width: 350px;
-  right: calc(50% - 500px);
-  top: 120px;
-  text-align: left;
-  opacity: 0;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
-}
-
-.surgery-through-the-ages .specialty-info.active-info {
-  opacity: 1;
-}
-
-.surgery-through-the-ages .specialty-ages {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  left: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 190px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: rgba(0, 0, 0, 0.8);
-  color: #ffffff;
-  font-size: 27px;
-}
-
-.surgery-through-the-ages .specialty-ages > div {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.surgery-through-the-ages .specialty-ages > div:hover, .surgery-through-the-ages .specialty-ages > div .active-tab {
-  background: #ffffff;
-  color: #000000;
-}
-
-.surgery-through-the-ages .specialty-ages > div.active-ages {
-  color: #000000;
-  background: #ffffff;
-  position: relative;
-}
-
-.surgery-through-the-ages .specialty-ages > div.active-ages:before {
-  content: '';
-  top: -60px;
-  left: calc(50% - 30px);
-  position: absolute;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid white;
-}
-
 /* ------------------------
 	Blog/Category/Archives
 ------------------------ */

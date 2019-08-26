@@ -34,14 +34,14 @@ $menuHeight : 60px;
 			//show sub-menus on hover
 			&:hover{
 				> a {
-					color: $darkColor;
-					background: $secondaryAlt;
+					color: $lightColor;
+					background: $primaryAlt;
 					// border-bottom: 2px solid $tertiaryColor;
 
 					// border-top: 1px solid $tertiaryColor;
 					// background: lighten($primaryColor, 15%);
 					// background: $darkColor;
-					// background-color: $secondaryAlt;
+					// background-color: $primaryAlt;
 
 
 				} 
@@ -67,8 +67,8 @@ $menuHeight : 60px;
 				text-transform: none;
 				font-weight: 600;
 				&:hover {
-					color: $darkColor;
-					background: $secondaryAlt;
+					color: $lightColor;
+					background: $primaryAlt;
 				}
 			}
 		}
@@ -80,7 +80,7 @@ $menuHeight : 60px;
 	}
 
 	.sub-menu {
-			background: $secondaryAlt; //set to your own background color
+			background: $primaryAlt; //set to your own background color
 			// border: 1px solid rgba($lightColor, .2); //for visual purposes.  can remove.
 			position: absolute;
 			top: 60px;
@@ -107,7 +107,7 @@ $menuHeight : 60px;
 					&:after{
 						content: '\f061';
 						font-family: 'Font Awesome 5 Pro';
-						color: $darkColor;
+						color: $lightColor;
 						font-size: 10px;
 						// background-size: 8px 12px;
 						transition: .1s linear all;
@@ -149,13 +149,13 @@ $menuHeight : 60px;
 				}
 
 				a {
-					color: $darkColor;
-					background: $secondaryAlt;
+					color: $lightColor;
+					background: $primaryAlt;
 					padding: 8px 20px !important;
 				}
 				&:hover {
 					> a {
-						color: $darkColor;
+						color: $lightColor;
 						border-bottom: none;
 						text-decoration: none;
 					}
@@ -164,7 +164,7 @@ $menuHeight : 60px;
 			a{
 				text-align: left;
 				height: auto !important;
-				color: $darkColor;
+				color: $lightColor;
 				line-height: 20px;
 			}
 		}
@@ -178,7 +178,7 @@ $menuHeight : 60px;
 				// position: relative;
 				display: none;
 				width: 800px;
-				border: 1px solid rgba($secondaryAlt, .6); //for visual purposes.  can remove.
+				border: 1px solid rgba($primaryAlt, .6); //for visual purposes.  can remove.
 				// transition: .25s ease-in-out top, .25s ease-in-out opacity;
 				transition: all .5s ease-in-out; 
 				top: 95px;

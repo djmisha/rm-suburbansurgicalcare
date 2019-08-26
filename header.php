@@ -33,7 +33,8 @@
 			<div class="hamburger"></div>
 		</div>
 		<div class="locations-trigger">
-			<i class="fas fa-map-marker-alt"></i>
+			<?php // inline_svg('icon-phone'); ?>
+			<!-- <i class="fas fa-map-marker-alt"></i> -->
 			<i class="fas fa-mobile-alt"></i>
 		</div>
 		<nav>
@@ -45,14 +46,13 @@
 			)); ?>
 		</nav>
 		<div class="nav-bar-locations">
+			<?php inline_svg('icon-phone'); ?>
 			<?php if(have_rows('locations', 'option')): ?>
 				<?php while(have_rows('locations', 'option')): the_row(); ?>
 					<div class="the-loc">
-						<i class="fas fa-map-marker-alt"></i>
 						<a href="<?php the_sub_field('map_link', 'option'); ?>" class="track-outbound loc-name" data-label="Address - Header" target="_blank"  rel="noopener">
 							<span><?php the_sub_field('name', 'option'); ?></span>
 						</a>
-						-
 						<a href="<?php the_sub_field('phone_link'); ?>" class="track-outbound head-phone" data-label="Phone - Header"><?php the_sub_field('phone'); ?></a>
 					</div>
 				<?php endwhile; ?>
