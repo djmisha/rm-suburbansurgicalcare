@@ -21,7 +21,6 @@
 		var site_path = rm_data.siteUrl;
 
 
-
 		/*================================
 		=            Wow INIT            =
 		================================*/
@@ -56,16 +55,7 @@
 
 
 
-	 	/*=========================================
-	 	=            Locations Trigger            =
-	 	=========================================*/
-	 	
-	 	$('.locations-trigger').click(function(event) {
-	 		/* Act on the event */
-	 		$('.nav-bar-locations').toggleClass('locations-active');
-	 	});
-	 	
-
+	
 	
 		
 		/*================================

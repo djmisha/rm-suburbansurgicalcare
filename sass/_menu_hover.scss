@@ -35,7 +35,7 @@ $menuHeight : 60px;
 			&:hover{
 				> a {
 					color: $lightColor;
-					background: $primaryAlt;
+					background: darken( $primaryColor, 10%);
 					// border-bottom: 2px solid $tertiaryColor;
 
 					// border-top: 1px solid $tertiaryColor;
@@ -60,7 +60,7 @@ $menuHeight : 60px;
 			a{	
 				display: block;
 				text-decoration: none;
-				padding: 28px 20px;
+				padding: 20px 12px;
 				transition: .25s ease-in-out background;
 				color: $lightColor; 
 				height: $menuHeight;
@@ -68,19 +68,19 @@ $menuHeight : 60px;
 				font-weight: 600;
 				&:hover {
 					color: $lightColor;
-					background: $primaryAlt;
+					background: darken( $primaryColor, 10%);
 				}
 			}
 		}
 	}
 
 	a {
-		line-height: 5px;
+		// line-height: 5px;
 		font-size: 14px; 
 	}
 
 	.sub-menu {
-			background: $primaryAlt; //set to your own background color
+			background: darken( $primaryColor, 10%); //set to your own background color
 			// border: 1px solid rgba($lightColor, .2); //for visual purposes.  can remove.
 			position: absolute;
 			top: 60px;
@@ -112,7 +112,7 @@ $menuHeight : 60px;
 						// background-size: 8px 12px;
 						transition: .1s linear all;
 						position: absolute;
-						top: 5px;
+						top: 12px;
 						z-index: 9999;
 						// transform: translateY(-50%);
 						right: 10px;
@@ -150,8 +150,8 @@ $menuHeight : 60px;
 
 				a {
 					color: $lightColor;
-					background: $primaryAlt;
-					padding: 8px 20px !important;
+					background: darken( $primaryColor, 10%);
+					padding: 12px 20px !important;
 				}
 				&:hover {
 					> a {

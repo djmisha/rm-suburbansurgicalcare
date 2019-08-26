@@ -10,7 +10,7 @@
 
 	<?php if(!is_404()): ?>
 		<!-- <link rel="stylesheet" href="https://use.typekit.net/kct4tca.css"> -->
-		<?php miniCSS::url( 'https://fonts.googleapis.com/css?family=Lato|Lora|Open+Sans:400,600&display=swap' ); ?>
+		<?php miniCSS::url( 'https://fonts.googleapis.com/css?family=Lato|Lora:400,400i|Open+Sans:400,600&display=swap' ); ?>
 	<?php endif; ?>
 	<?php wp_head()?>
 
@@ -32,11 +32,6 @@
 			<div class="hamburger"></div>
 			<div class="hamburger"></div>
 		</div>
-		<div class="locations-trigger">
-			<?php // inline_svg('icon-phone'); ?>
-			<!-- <i class="fas fa-map-marker-alt"></i> -->
-			<i class="fas fa-mobile-alt"></i>
-		</div>
 		<nav>
 			<?php wp_nav_menu( array(
 				'menu' 		=> 'Main',
@@ -50,9 +45,9 @@
 			<?php if(have_rows('locations', 'option')): ?>
 				<?php while(have_rows('locations', 'option')): the_row(); ?>
 					<div class="the-loc">
-						<a href="<?php the_sub_field('map_link', 'option'); ?>" class="track-outbound loc-name" data-label="Address - Header" target="_blank"  rel="noopener">
+						<!-- <a href="<?php the_sub_field('map_link', 'option'); ?>" class="track-outbound loc-name" data-label="Address - Header" target="_blank"  rel="noopener">
 							<span><?php the_sub_field('name', 'option'); ?></span>
-						</a>
+						</a> -->
 						<a href="<?php the_sub_field('phone_link'); ?>" class="track-outbound head-phone" data-label="Phone - Header"><?php the_sub_field('phone'); ?></a>
 					</div>
 				<?php endwhile; ?>

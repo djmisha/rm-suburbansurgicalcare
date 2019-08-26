@@ -31,16 +31,15 @@
 		height: 60px;
 	}
 	nav {
-		// max-width: 1152px;
+		max-width: 1252px;
 		margin: 0 auto;
-		// border: 1px solid red;
 	}
 }
 
 .menu-trigger {
 	.is--ipad & {
 		position: absolute;
-		right: 0px;
+		left: 0px;
 		display: block;
 		width: 65px;
 		@include media(1330px) {
@@ -51,7 +50,7 @@
 	padding: 15px 20px 15px 20px;
 	height: 100%;
 	position: absolute;
-	right: 0px;
+	left: 0px;
 	width: 65px;
 	@include media($desktop) {
 		display: none;
@@ -74,73 +73,35 @@
 	}
 }
 
-.locations-trigger {
-	position: absolute;
-	width: 60px;
-	height: 60px;
-	left: 0px;
-	top: 0px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	@include media($tablet) {
-		display: none;
-	}
-	i {
-		font-size: 25px;
-		color: $lightColor;
-	}
-}
-
 .nav-bar-locations {
 	position: absolute;
-	width: 100%;
-	color: $lightColor;
-	right: 0;
-	height: 60px;
-	background: $darkColor;
-	top: 60px;
-	left: -100%;
-	text-align: left;
+	width: 250;
+	background: transparent;
+	display: flex;
 	justify-content: flex-start;
-	flex-wrap: wrap;
-	transition: all .2s ease-out;
-	&.locations-active {
-		left: 0;
-	}
-	@include media($tablet) {
-		width: 90%;
-		background: transparent;
-		display: flex;
-		justify-content: flex-start;
-		flex-wrap: nowrap;
-		top: 15px;
-		left: 20px;
-		height: auto;
-	}
+	flex-wrap: nowrap;
+	top: 15px;
+	right: 20px;
+	height: auto;
 	@include media($desktop) {
 		width: 250px;
 		position: absolute;
-		right: 0;
+		right: calc(50% - 600px);
 		left: auto;
-		// border: 1px solid red;
-		// justify-content: flex-end;
 	}
 	> div {
 		font-weight: 600;
 		margin-left: 5px;
 		&:first-of-type {
 			padding-top: 5px;
-			@include media($tablet) {
 				padding-right: 10px;
 				padding-left: 5px;
 				border-right: 1px solid $primaryAlt;
-			}
 		}
 		&:last-of-type {
 			padding-top: 5px;
+				padding-left: 7px;
 			@include media($tablet) {
-				padding-left: 10px;
 			}
 		}
 	}
@@ -165,7 +126,6 @@
 		}
 	}
 }
-
 
 
 /* Inside Page Headers */

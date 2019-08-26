@@ -16,9 +16,29 @@
 			<?php the_field('welcome_content'); ?>
 			<a href="<?php the_field('learn_more_button'); ?>" class="button" rel="nofollow">Learn More</a>
 			<a href="schedule_a_consultation_button" class="button" rel="nofollow">Schedule a Consultation</a>
+			<div class="overlay"></div>
 		</div>
 	</section>
 </div> 
+
+<section class="welcome-bottom">
+	<div class="top-recognition">
+		<span>Top National Recognition</span>
+		<div class="reco">
+			<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/icon-asmbs.png" alt="Recognition icon">
+			Bariatric Surgery Center of Excellence (American Society for Metabolic & Bariatric Surgery)
+		</div>
+		<div class="reco">
+			<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/icon-bluecross.png" alt="Recognition icon">
+			Designated Center for Bariatric Surgery (Blue Cross Blue Shield of Illinois)
+		</div>
+	</div>
+	<div class="icon-video">
+		<a href="<?php the_field('button_video'); ?>">
+			<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/icon-video.png" alt="video icon">
+		</a>
+	</div>
+</section>
 
 <!-- 
 <section id="aboutus" class="home-aboutus b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-about.jpg">
