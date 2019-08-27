@@ -40,22 +40,42 @@
 	</div>
 </section>
 
-<!-- 
-<section id="aboutus" class="home-aboutus b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-about.jpg">
-	<h2><?php the_field('about_headline'); ?></h2>
-	<?php the_field('about_content'); ?>
-	<a href="<?php the_field('gallery_button'); ?>" rel="nofollow" class="button">View Our Patient Gallery</a>
+
+<section id="aboutus" class="home-aboutus">
+	<div>
+		<h2><?php the_field('about_headline'); ?></h2>
+		<span class="about-sub-head"><?php the_field('about_subheadline'); ?></span>
+		<?php the_field('about_content'); ?>
+		<a href="<?php the_field('about_button'); ?>" rel="nofollow" class="button">More About Us</a>
+	</div>
+	<div>
+		<h2><?php the_field('about_headline_2'); ?></h2>
+		<span class="about-sub-head"><?php the_field('about_sub_headline_2'); ?></span>
+		<?php the_field('about_content_2'); ?>
+		<a href="<?php the_field('learn_more_button'); ?>" rel="nofollow" class="button">Learn More</a>
+		<a href="<?php the_field('view_patient_gallery_button'); ?>" rel="nofollow" class="button">View Patient Gallery</a>
+	</div>
 </section>
 
-<div class="home-doctor">
-	<div class="doc-image b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-doctor.jpg"></div>
-	<div class="doc-content"> 
-		<h2><?php the_field('doctor_headline'); ?></h2>
-		<?php the_field('doctor_cont'); ?>
-		<a href="<?php the_field('doctor_button'); ?>" rel="nofollow" class="button">Learn More</a>
+
+<div class="home-doctors b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-doctors.jpg">
+	<div class="the-docs b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-our-docs.png">
+		<h3>Meet Our Doctors</h3>
+		<?php if(have_rows('our_docs')): ?>
+			<ul>
+				<?php while(have_rows('our_docs')): the_row(); ?>
+					<li>
+						<a href="<?php the_sub_field('link'); ?>" rel="nofollow">
+							<?php the_sub_field('name'); ?>
+						</a>
+					</li>
+				<?php endwhile; ?>
+			</ul>
+		<?php endif; ?>
 	</div>
 </div>
 
+<!-- 
 <div class="home-featured-procedures">
 	<div class="the-procedure b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-featured-1.jpg">
 		<h2>Breast</h2>

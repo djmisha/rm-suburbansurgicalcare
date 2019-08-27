@@ -6568,16 +6568,23 @@ footer .footer-logo {
 /* ------------------------
 	Home Page
 ------------------------ */
-.home-aboutus,
-.home-doctor,
-.home-featured-procedures,
-.surgery-through-the-ages,
-.upper-footer,
-.middle-footer,
-.lower-footer,
-.footer-logo,
-.footer-map footer {
-  display: none !important;
+.home h2 {
+  font-family: "Lora", serif;
+  color: #085287;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 40px;
+}
+
+.home h2 span {
+  color: #e27500;
+}
+
+@media only screen and (min-width: 1080px) {
+  .home h2 {
+    font-size: 48px;
+    line-height: 54px;
+  }
 }
 
 /*===============================================
@@ -6860,103 +6867,112 @@ footer .footer-logo {
 /*====================================
 =            home-aboutus            =
 ====================================*/
-/*===================================
-=            home-doctor            =
-===================================*/
-.home-doctor {
-  background: #000000;
-  color: #ffffff;
+.home-aboutus {
   text-align: left;
-}
-
-@media only screen and (min-width: 768px) {
-  .home-doctor {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 85px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .home-doctor > div {
-    width: 50%;
-  }
-}
-
-.home-doctor .doc-image {
-  background-position: center;
-  background-size: cover;
-  min-height: 300px;
-}
-
-.home-doctor .doc-content {
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 @media only screen and (min-width: 768px) {
-  .home-doctor .doc-content {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: 0 auto;
+  .home-aboutus {
+    padding-top: 80px;
+    padding-bottom: 100px;
   }
 }
 
 @media only screen and (min-width: 1080px) {
-  .home-doctor .doc-content {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
+  .home-aboutus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
-.home-doctor .doc-content h2, .home-doctor .doc-content p {
-  max-width: 600px;
+.home-aboutus > div:first-of-type {
+  margin-bottom: 60px;
 }
 
-.home-doctor h2 {
+@media only screen and (min-width: 1080px) {
+  .home-aboutus > div {
+    margin-bottom: 0px;
+    width: 48%;
+  }
+}
+
+.home-aboutus .about-sub-head {
+  font-size: 18px;
   display: block;
-  width: 100%;
-  margin-top: 0;
-  text-align: left;
+  margin-top: 5px;
   margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 768px) {
-  .home-doctor h2 {
-    margin-bottom: 20px;
+@media only screen and (min-width: 1080px) {
+  .home-aboutus .about-sub-head {
+    margin-bottom: 40px;
   }
 }
 
-.home-doctor h2 span {
-  display: block;
-  font-size: 18px;
-  text-transform: uppercase;
+.home-doctors {
+  border: 1px solid pink;
+  height: 517px;
+  background-position: center center;
 }
 
 @media only screen and (min-width: 768px) {
-  .home-doctor h2 span {
-    font-size: 24px;
+  .home-doctors {
+    padding-top: 40px;
   }
 }
 
-.home-doctor .button {
-  margin-top: 20px;
-  margin-left: 0;
+.home-doctors .the-docs {
+  background-position: top center;
+  width: 350px;
+  height: 351px;
 }
 
-/*================================================
-=            home-featured-procedures            =
-================================================*/
+@media only screen and (min-width: 1080px) {
+  .home-doctors .the-docs {
+    margin-left: calc(50% + 200px);
+  }
+}
+
+.home-doctors .the-docs h3 {
+  padding-top: 30px;
+  color: #ffffff;
+  margin-bottom: 0;
+  font-family: "Lora", serif;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-doctors .the-docs h3 {
+    font-size: 26px;
+  }
+}
+
+.home-doctors .the-docs ul {
+  margin: 0;
+  list-style: none;
+  padding: 40px;
+}
+
+.home-doctors .the-docs ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.home-doctors .the-docs ul li {
+  padding: 7px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  text-align: left;
+}
+
+.home-doctors .the-docs ul li:last-of-type {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
 /* ------------------------
 	Blog/Category/Archives
 ------------------------ */
