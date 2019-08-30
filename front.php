@@ -57,8 +57,9 @@
 	</div>
 </section>
 
-
 <div class="home-doctors b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-doctors.jpg">
+	<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy our-docs" data-src="<?php bloginfo('template_directory'); ?>/images/bg-thedocs.png" alt="docs">
+
 	<div class="the-docs b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-our-docs.png">
 		<h3>Meet Our Doctors</h3>
 		<?php if(have_rows('our_docs')): ?>
@@ -75,51 +76,13 @@
 	</div>
 </div>
 
-<!-- 
-<div class="home-featured-procedures">
-	<div class="the-procedure b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-featured-1.jpg">
-		<h2>Breast</h2>
-		<?php if(have_rows('featured_breast')): ?>
-			<ul>
-				<?php while(have_rows('featured_breast')): the_row(); ?>
-					<li>
-						<a href="<?php the_sub_field('procedure_link'); ?>">
-							<?php the_sub_field('name'); ?>
-						</a>
-					</li>
-				<?php endwhile; ?>
-			</ul>
-		<?php endif; ?>
-	</div>
-	<div class="the-procedure b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-featured-2.jpg">
-		<h2>Body</h2>
-		<?php if(have_rows('featured_body')): ?>
-			<ul>
-				<?php while(have_rows('featured_body')): the_row(); ?>
-					<li>
-						<a href="<?php the_sub_field('procedure_link'); ?>">
-							<?php the_sub_field('name'); ?>
-						</a>
-					</li>
-				<?php endwhile; ?>
-			</ul>
-		<?php endif; ?>
-	</div>
-	<div class="the-procedure b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-featured-3.jpg">
-		<h2>Face</h2>
-		<?php if(have_rows('featured_face')): ?>
-			<ul>
-				<?php while(have_rows('featured_face')): the_row(); ?>
-					<li>
-						<a href="<?php the_sub_field('procedure_link'); ?>">
-							<?php the_sub_field('name'); ?>
-						</a>
-					</li>
-				<?php endwhile; ?>
-			</ul>
-		<?php endif; ?>
-	</div>	
-	<div class="the-overlay"></div>
-</div> -->
+
+<section class="home-weight b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-weight.jpg">
+	<h2><span>The Weight</span> is Over</h2>
+	<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy icon-scale" data-src="<?php bloginfo('template_directory'); ?>/images/icon-scale.png" alt="docs">
+	<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy icon-patient" data-src="<?php bloginfo('template_directory'); ?>/images/icon-patient.png" alt="docs">
+	<a href="<?php the_field('view_patient_gallery_button'); ?>" rel="nofollow" class="button">View Patient Gallery</a>
+</section>
+
 
 <?php get_footer()?>

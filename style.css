@@ -6568,6 +6568,19 @@ footer .footer-logo {
 /* ------------------------
 	Home Page
 ------------------------ */
+header,
+.welcome-parallax,
+.welcome-bottom,
+.home-aboutus,
+.home-doctors,
+.upper-footer,
+.middle-footer,
+.lower-footer,
+.footer-logo,
+.footer-map footer {
+  display: none !important;
+}
+
 .home h2 {
   font-family: "Lora", serif;
   color: #085287;
@@ -6916,14 +6929,51 @@ footer .footer-logo {
 }
 
 .home-doctors {
-  border: 1px solid pink;
-  height: 517px;
   background-position: center center;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  height: 670px;
 }
 
 @media only screen and (min-width: 768px) {
   .home-doctors {
+    height: 817px;
+    padding-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .home-doctors {
     padding-top: 40px;
+    height: 517px;
+  }
+}
+
+.home-doctors .our-docs {
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+  left: 30px;
+  width: 500px;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-doctors .our-docs {
+    left: 60px;
+    bottom: auto;
+    top: 340px;
+    width: 900px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .home-doctors .our-docs {
+    width: auto;
+    top: -40px;
+    right: auto;
+    left: calc(50% - 640px);
+    height: auto;
   }
 }
 
@@ -6931,10 +6981,13 @@ footer .footer-logo {
   background-position: top center;
   width: 350px;
   height: 351px;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 1080px) {
   .home-doctors .the-docs {
+    width: 350px;
+    height: 351px;
     margin-left: calc(50% + 200px);
   }
 }
@@ -6971,6 +7024,100 @@ footer .footer-logo {
 
 .home-doctors .the-docs ul li:last-of-type {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.home-weight {
+  width: 100%;
+  background-position: left center;
+  background-position-x: left -300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-weight {
+    padding-bottom: 160px;
+    background-position: center center;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .home-weight {
+    padding-bottom: 0px;
+    min-height: 655px;
+  }
+}
+
+.home-weight h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-weight h2 {
+    padding-top: 140px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .home-weight h2 {
+    padding-top: 140px;
+    font-size: 56px;
+  }
+}
+
+.home-weight .icon-scale {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-weight .icon-scale {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .home-weight .icon-scale {
+    width: auto;
+  }
+}
+
+.home-weight .icon-patient {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-weight .icon-patient {
+    width: auto;
+    width: 390px;
+    margin: 0;
+    position: absolute;
+    right: calc(50% - 420px);
+    display: block;
+    top: 100px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .home-weight .icon-patient {
+    top: 100px;
+    width: 480px;
+    right: calc(50% - 550px);
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  .home-weight .icon-patient {
+    width: auto;
+    position: absolute;
+    top: 100px;
+  }
 }
 
 /* ------------------------
