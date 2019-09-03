@@ -4428,6 +4428,7 @@ main,
     -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
     position: fixed;
+    height: 62px;
   }
 }
 
@@ -6346,7 +6347,7 @@ footer .footer-logo {
   height: 27px;
   position: absolute;
   right: 20px;
-  top: 15px;
+  top: 6px;
 }
 
 .middle-footer .shop-button svg path {
@@ -6568,19 +6569,6 @@ footer .footer-logo {
 /* ------------------------
 	Home Page
 ------------------------ */
-header,
-.welcome-parallax,
-.welcome-bottom,
-.home-aboutus,
-.home-doctors,
-.upper-footer,
-.middle-footer,
-.lower-footer,
-.footer-logo,
-.footer-map footer {
-  display: none !important;
-}
-
 .home h2 {
   font-family: "Lora", serif;
   color: #085287;
@@ -7118,6 +7106,298 @@ header,
     position: absolute;
     top: 100px;
   }
+}
+
+.home-orbera {
+  text-align: left;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 660px;
+}
+
+.home-orbera h2 {
+  color: #e27500;
+}
+
+.home-orbera h2 span {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  color: #000;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-orbera {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home-orbera {
+    padding-right: 50%;
+  }
+}
+
+.home-orbera img {
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-orbera img {
+    margin-bottom: 0px;
+    position: absolute;
+    width: 400px;
+    left: 50%;
+    top: calc(50% - 200px);
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .home-orbera img {
+    top: 50px;
+    width: auto;
+  }
+}
+
+.home-orbera .button {
+  margin-top: 30px;
+}
+
+.home-orbera .button:first-of-type {
+  margin-right: 20px;
+}
+
+.home-orbera .orbera-fee {
+  position: relative;
+  margin-top: 20px;
+  font-family: "Lora", serif;
+  color: #085287;
+  font-size: 25px;
+  line-height: 28px;
+}
+
+.home-orbera .orbera-call {
+  font-family: "Open Sans", sans-serif;
+  color: #e27500;
+  font-size: 20px;
+  line-height: 38px;
+}
+
+.home-featured {
+  position: relative;
+  text-align: left;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-position: center right;
+  background-position-x: right -200px;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-featured {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .home-featured {
+    background-position: top center;
+  }
+}
+
+.home-featured .special-headline {
+  background: #ffffff;
+  position: relative;
+  z-index: 3000;
+  display: none;
+  width: 450px;
+  padding: 30px 20px;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (min-width: 1080px) {
+  .home-featured .special-headline {
+    display: block;
+    position: absolute;
+    right: calc( 50% - 480px);
+    top: calc( 50% - 50px);
+  }
+  .home-featured .special-headline h2 {
+    font-size: 50px;
+  }
+}
+
+.home-featured h3 {
+  margin-top: 0;
+  position: relative;
+  z-index: 3000;
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-family: "Lora", serif;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-featured h3 {
+    font-size: 40px;
+  }
+}
+
+.home-featured h3:nth-of-type(2) {
+  margin-top: 60px;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-featured h3:nth-of-type(2) {
+    margin-top: 100px;
+  }
+}
+
+.home-featured ul {
+  position: relative;
+  z-index: 3000;
+  list-style: none;
+  width: 100%;
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 1080px) {
+  .home-featured ul {
+    margin-bottom: 20px;
+    width: 50%;
+  }
+}
+
+.home-featured ul a {
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-decoration: none;
+  background: transparent;
+  -webkit-transition: backround .3 ease-in;
+  transition: backround .3 ease-in;
+}
+
+.home-featured ul a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.home-featured ul li:first-of-type {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (min-width: 768px) {
+  .home-featured ul li:nth-of-type(4) {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+.home-featured .the-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(226, 117, 0, 0.9);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+@media only screen and (min-width: 1080px) {
+  .home-featured .the-overlay {
+    width: 55%;
+  }
+}
+
+.home-featured .button {
+  position: relative;
+  z-index: 3000;
+  margin-top: 20px;
+}
+
+.home-featured .button:hover {
+  background: #053557;
+}
+
+.home-news {
+  text-align: left;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-news {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}
+
+.home-news .the-headline {
+  font-family: "Lora", serif;
+  color: #e27500;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media only screen and (min-width: 1080px) {
+  .home-news .the-headline {
+    font-size: 40px;
+  }
+}
+
+.home-news ul {
+  list-style: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-news ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .home-news ul > li {
+    width: 30%;
+    margin-right: 40px;
+  }
+  .home-news ul > li:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.home-news li {
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 1080px) {
+  .home-news li {
+    margin-bottom: 0;
+  }
+}
+
+.home-news a {
+  text-decoration: none;
+}
+
+.home-news .news-head {
+  font-size: 22px;
+  font-family: "Lora", serif;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.home-news p {
+  color: #000000;
 }
 
 /* ------------------------

@@ -21,6 +21,8 @@
 	</section>
 </div> 
 
+
+
 <section class="welcome-bottom">
 	<div class="top-recognition">
 		<span>Top National Recognition</span>
@@ -41,6 +43,7 @@
 </section>
 
 
+
 <section id="aboutus" class="home-aboutus">
 	<div>
 		<h2><?php the_field('about_headline'); ?></h2>
@@ -56,6 +59,8 @@
 		<a href="<?php the_field('view_patient_gallery_button'); ?>" rel="nofollow" class="button">View Patient Gallery</a>
 	</div>
 </section>
+
+
 
 <div class="home-doctors b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-doctors.jpg">
 	<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy our-docs" data-src="<?php bloginfo('template_directory'); ?>/images/bg-thedocs.png" alt="docs">
@@ -84,5 +89,85 @@
 	<a href="<?php the_field('view_patient_gallery_button'); ?>" rel="nofollow" class="button">View Patient Gallery</a>
 </section>
 
+
+<section class="home-orbera b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-orbera.jpg">
+	<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy icon-scale" data-src="<?php bloginfo('template_directory'); ?>/images/icon-ball.png" alt="ball">
+	<h2><?php the_field('orbera_headline'); ?></h2>
+	
+	<?php the_field('orbera_content'); ?>
+	<div class="orbera-fee">Free ORBERA&trade; Intragastic Ballon Consultation</div>
+	<div class="orbera-call">Call Today 866-716-5263</div>
+	<a href="<?php the_field('orbera_learn_more_button'); ?>" class="button" rel="nofollow">Learn More</a>
+	<a href="<?php the_field('orbera_schedule_button'); ?>" class="button" rel="nofollow">Schedule Consulation</a>
+</section>
+
+
+<section class="home-featured b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-featured.jpg">
+	<div class="special-headline">
+		<h2>Healthy <span>Again</span></h2>
+	</div>
+	<h3>Specialities/Procedures</h3>
+	<?php if(have_rows('featured_procedures_part_1')): ?>
+		<ul class="two-column">
+			<?php while(have_rows('featured_procedures_part_1')): the_row(); ?>
+				<li>
+					<a href="<?php the_sub_field('link'); ?>" rel="nofollow">
+						<?php the_sub_field('name'); ?>
+					</a>
+				</li>
+			<?php endwhile; ?>
+		</ul>
+	<?php endif; ?>
+
+	<a href="<?php the_field('view_more_button_1'); ?>" class="button" rel="nofollow">View All</a>
+
+	<h3>Bariatric Surgery</h3>
+	<?php if(have_rows('featured_procedures_part_2')): ?>
+		<ul class="two-column">
+			<?php while(have_rows('featured_procedures_part_2')): the_row(); ?>
+				<li>
+					<a href="<?php the_sub_field('link'); ?>" rel="nofollow">
+						<?php the_sub_field('name'); ?>
+					</a>
+				</li>
+			<?php endwhile; ?>
+		</ul>
+	<?php endif; ?>
+
+	<a href="<?php the_field('view_more_button_2'); ?>" class="button" rel="nofollow">View All</a>
+
+	<div class="the-overlay"></div>
+</section>
+
+
+<section class="home-news">
+	<span class="the-headline">From Our Blog</span>
+	<div class="gars-line"></div>
+		<?php if( get_post_type() != 'post'): ?>
+			<?php
+				$args = array(
+					'numberposts' => 3,
+					'post_status'=>"publish",
+					'post_type'=>"post",
+					'orderby'=>"post_date");
+
+					$postslist = get_posts( $args );
+				
+				echo '<ul class="latest-posts">';
+				
+				foreach ($postslist as $post) :  setup_postdata($post); ?>
+			<li>
+				<a href="<?the_permalink();?>" rel="nofollow">
+					<span class="news-head"><?php the_title(); ?></span>
+					<div class="news-thumb"><?php the_post_thumbnail('thumbnail', array( 'alt' => trim(strip_tags( $post->post_title )),)); ?></div>
+					<?php my_excerpt(15); ?>
+					<span class="button">Learn More</span>
+				</a>
+			</li>
+		<?php endforeach; ?>
+		<?php wp_reset_query(); ?>
+	</ul>
+	<?php endif; ?>
+</section>
 
 <?php get_footer()?>

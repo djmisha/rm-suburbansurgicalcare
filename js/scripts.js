@@ -54,6 +54,8 @@
 	 //    });
 
 
+	 	// $('.latest-posts li').clone().appendTo('ul.latest-posts');
+	 	// $('.latest-posts li').clone().appendTo('ul.latest-posts');
 
 	
 	

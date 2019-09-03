@@ -26,6 +26,7 @@
 		border-top: 2px solid $secondaryColor;
 		box-shadow: 0px 10px 20px rgba($darkColor, .3);
 		position: fixed;
+		height: 62px;
 	}
 	.is--ipad & {
 		height: 60px;

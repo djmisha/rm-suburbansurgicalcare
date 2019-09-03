@@ -3,7 +3,10 @@ header,
 .welcome-bottom,
 .home-aboutus,
 .home-doctors,
+.home-weight,
+.home-featured,
 
+.home-news,
 .upper-footer,
 .middle-footer,
 .lower-footer,
@@ -11,7 +14,7 @@ header,
 .footer-map
 footer 
 {
-	display: none !important;
+	// display: none !important;
 }
 
 
@@ -410,5 +413,232 @@ footer
 			position: absolute;
 			top: 100px
 		}
+	}
+}
+
+
+.home-orbera {
+	text-align: left;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	min-height: 660px;
+	h2 {
+		color: $secondaryColor;
+		span {
+			display: block;
+			font-family: $primaryFont;
+			font-size: 22px;
+			color: #000;
+			line-height: 24px;
+			margin-bottom: 40px;
+		}
+	}
+	@include media($tablet) {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+	@include media($tablet) {
+		padding-right: 50%;
+	}
+	img {
+		width: 80%;
+		margin-bottom: 40px;
+		@include media($tablet) {
+			margin-bottom: 0px;
+			position: absolute;
+			width: 400px;
+			left: 50%;
+			top: calc(50% - 200px);
+		}
+		@include media($desktop) {
+			top: 50px;
+			width: auto;
+		}
+	}
+	.button {
+		margin-top: 30px;
+		&:first-of-type() {
+			margin-right: 20px;
+		}
+	}
+	.orbera-fee {
+		position: relative;
+		margin-top: 20px;
+		font-family: $secondaryFont;
+		color: $primaryColor;
+		font-size: 25px;
+		line-height: 28px;
+	}
+	.orbera-call {
+		font-family: $primaryFont;
+		color: $secondaryColor;
+		font-size: 20px;
+		line-height: 38px;
+	}
+}
+
+
+.home-featured {
+	position: relative;
+	text-align: left;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-position: center right;
+	background-position-x: right -200px;
+	@include media($tablet) {
+		padding-top: 120px;
+		padding-bottom: 120px;
+		background-size: cover;
+	}
+	@include media($desktop) {
+		background-position: top center;
+	}
+	.special-headline {
+		background: $lightColor;
+		position: relative;
+		z-index: 3000;
+		display: none;
+		width: 450px;
+		padding: 30px 20px;
+		box-shadow: 0px 0px 30px rgba($darkColor, .3);
+		@include media($desktop) {
+			display: block;
+			position: absolute;
+			right: calc( 50% - 480px);
+			top: calc( 50% - 50px); 
+			h2 {
+				font-size: 50px;
+			}
+		}
+	}
+	h3 {
+		margin-top: 0;
+		position: relative;
+		z-index: 3000;
+		margin-bottom: 40px;
+		color: $lightColor;
+		font-family: $secondaryFont;
+		@include media($tablet) {
+			font-size: 40px;
+		}
+	}
+	h3:nth-of-type(2) {
+		margin-top: 60px;
+		@include media($tablet) {
+			margin-top: 100px;
+		}
+	}
+	ul {
+		position: relative;
+		z-index: 3000;
+		list-style: none;
+		width: 100%;
+		margin-top: 40px;
+		@include media($desktop) {
+			margin-bottom: 20px;
+			width: 50%;
+		}
+		a {
+			display: block;
+			padding-top: 7px;
+			padding-bottom: 7px;
+			border-bottom: 1px solid rgba(#fff, .2);
+			color: #fff;
+			text-decoration: none;
+			background: transparent;
+			transition: backround .3 ease-in;
+			&:hover {
+				background: rgba(#fff, .1);
+			}
+		}
+		li {
+			&:first-of-type() {
+				border-top: 1px solid rgba(#fff, .2);
+			}
+		}
+		li {
+			@include media($tablet) {
+			&:nth-of-type(4) {
+				border-top: 1px solid rgba(#fff, .2);
+			}
+			}
+		}
+	}
+
+	.the-overlay {
+		width: 100%;
+		height: 100%;
+		background: rgba($secondaryColor, .9);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		z-index: 2000;
+		@include media($desktop) {
+			width: 55%;
+		}
+	}
+	.button {
+		position: relative;
+		z-index: 3000;
+		margin-top: 20px;
+		&:hover {
+			background: darken($primaryColor, 10%);
+		}
+	}
+}
+
+
+.home-news {
+	text-align: left;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	@include media($tablet) {
+		padding-top: 60px;
+		padding-bottom: 80px;
+	}
+	.the-headline {
+		font-family: $secondaryFont;
+		color: $secondaryColor;
+		text-align: center;
+		margin-bottom: 60px;
+		@include media($desktop) {
+			font-size: 40px;
+		}
+	}
+	ul {list-style: none;
+
+		@include media($tablet) {
+			display: flex;
+			> li {
+				width: 30%;
+				margin-right: 40px;
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	li {
+		margin-bottom: 50px;
+		@include media($desktop) {
+			margin-bottom: 0;
+		}
+	}
+	a {
+		text-decoration: none;
+	}
+	.news-head {
+		font-size: 22px;
+		font-family: $secondaryFont;
+		display: block;
+		margin-bottom: 15px;
+	}
+	p {
+		color: $darkColor;
 	}
 }
