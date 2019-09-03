@@ -132,37 +132,61 @@
 /* Inside Page Headers */
 
 .int-header {
-	background-position: center center;
-	background-repeat: no-repeat;
+	background: #e7ecef url('images/bg-header.jpg') center center no-repeat;
 	background-size: cover;
+	background-position-x: right -240px;
 	height: 180px;
 	margin-top: 60px;
-	background-color: $primaryAlt;
+	text-align: left;
+	@include media(500px) {
+		background-position: center center;
+
+	}
 	@include media($tablet) {
+		background-position: center center;
 		margin-top: 0px;
 		padding-top: 0;
 		background-size: cover;
-		height: 530px;
+		height: 400px;
 	}
 	@include media($desktop) {
-		background-position: center center;
 	}
 }
 
 .inside-logo {
 	position: absolute;
-	top: 100px;
-	left: 40px;
+	top: 0;
+	left: 20px;
+	padding-top: 80px;
 	@include media($tablet) {
+		padding-top: 100px;
 		position: relative;
-		top: 0;
 		left: 0;
-		padding-top: 190px;
 	}
 	img {
-		width: 180px;
+		width: 200px;
 		@include media($tablet) {
 			width: auto;
+		}
+	}
+}
+
+.inside-tagline {
+	padding-top: 80px;
+	color: $primaryColor;
+	font-size: 14px;
+	@include media($tablet) {
+		font-size: 22px;
+	}
+	span {
+		display: block;
+		font-family: $secondaryFont;
+		color: $secondaryColor;
+		font-size: 20px;
+		line-height: 20px;
+		@include media($tablet) {
+			font-size: 40px;
+			line-height: 40px;
 		}
 	}
 }

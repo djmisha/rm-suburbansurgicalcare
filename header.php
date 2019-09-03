@@ -9,7 +9,6 @@
 	<title><?php wp_title(""); ?></title>
 
 	<?php if(!is_404()): ?>
-		<!-- <link rel="stylesheet" href="https://use.typekit.net/kct4tca.css"> -->
 		<?php miniCSS::url( 'https://fonts.googleapis.com/css?family=Lato|Lora:400,400i|Open+Sans:400,600&display=swap' ); ?>
 	<?php endif; ?>
 	<?php wp_head()?>
@@ -23,8 +22,7 @@
 
 <a href="#skiptomaincontent" style="display:none;">Skip to main content</a>
 
-<!-- <header class="site-header <?php echo is_front_page() ? 'front-header' : 'int-header will-parallax parallax-internal-header b-lazy'; ?>" <?php get__header__image(); ?> > -->
-<header class="site-header <?php echo is_front_page() ? 'front-header' : 'int-header will-parallax parallax-internal-header'; ?>" <?php get__header__image(); ?> >
+<header class="site-header <?php echo is_front_page() ? 'front-header' : 'int-header'; ?>" <?php get__header__image(); ?> >
 
 	<div class="nav-bar">
 		<div class="menu-trigger">
@@ -56,12 +54,14 @@
 	</div>
 
 	<?php if(!is_front_page()): // Inside Page Logo ?>
-		<div class="inside-logo">
-			 <a href="<?php bloginfo('url'); ?>">
-			 	logo
-			 	<!-- <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Logo"> -->
-			 </a>
-		</div>
+		<section>
+			<div class="inside-logo">
+				 <a href="<?php bloginfo('url'); ?>">
+				 	<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo-header.png" alt=""></a>
+				 </a>
+			</div>
+			<div class="inside-tagline">Long Term <span>Weight Loss</span></div>
+		</section>
 	<?php endif; ?>
 
 </header>

@@ -46,7 +46,7 @@ h4,
 h5,
 h6,
 .the-headline {
-	// font-family: $primaryFont;
+	font-family: $secondaryFont;
 }
 
 .from-blog h1,
@@ -64,7 +64,7 @@ h2,
 .the-headline,
 .from-blog h1 {
 	font-size: 30px;
-	line-height: 40px;
+	line-height: 36px;
 	@include media($tablet) {
 		font-size: 36px;
 		line-height: 40px;

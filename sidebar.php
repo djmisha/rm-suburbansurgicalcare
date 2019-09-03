@@ -33,7 +33,43 @@
 		</div>
 	<?php } ?>
 
-	
+	<!-- Sidebar Related Pages -->
+
+	<?php if(!is_page(array('contact-us'))): ?>
+		<?php if(!this_is('gallery-child' || 'gallery') && get_post_type() != 'post' && get_post_type() != 'news-room'):
+			global $post;
+			$related_id = ( $post->post_parent ) ? $post->post_parent : $post->ID;
+			$childPages = wp_list_pages(array(
+					'title_li'  	=> '',
+					'child_of'  	=> $post->ID,
+					'depth'   	=> 1,
+					'echo'		=> 0
+			));
+			$wp__list_pages = wp_list_pages(array(
+					'title_li'  	=> '',
+					'child_of'  	=> $related_id,
+					'exclude'		=> "$post->ID",
+					'depth'   	=> 1,
+					'echo'		=> 0
+			));
+			if(!empty($childPages)):
+				$wp__list_pages = $childPages;
+			endif;
+			if( !empty($wp__list_pages) ): ?>
+				
+				<div class="sidebar-block related-pages">
+					<div class="sb-heading">Related Pages</div>
+					<div>
+						<ul class="list-unstyled">
+							<?php echo $wp__list_pages; ?>
+						</ul>
+					</div>
+				</div>
+
+			<?php endif; ?>
+		<?php endif; ?>
+	<?php endif; ?>
+	 
 
 
 </aside>
