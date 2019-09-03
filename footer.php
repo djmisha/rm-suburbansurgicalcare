@@ -1,13 +1,3 @@
-	<!-- <div class="footer-logos">
-		<?php if(have_rows('footer_logos', 'option')): ?>
-			<ul>
-				<?php while(have_rows('footer_logos', 'option')): the_row(); ?>
-					<li>
-					</li>
-				<?php endwhile; ?>
-			</ul>
-		<?php endif; ?>
-	</div> -->
 
 <footer>
 
@@ -61,12 +51,18 @@
 		<div class="online-bill-pay">
 			<div class="footer-headling">Online Bill Pay</div>
 			<!-- UPDATE LINK URL -->
+			<!-- UPDATE LINK URL -->
+			<!-- UPDATE LINK URL -->
+			<!-- UPDATE LINK URL -->
 			<a href="" target="_blank" rel="nofollow noopener">
 				<img data-src="<?php bloginfo('template_directory'); ?>/images/icon-billpay.png" alt="pay icon" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy">
 			</a>
 		</div>
 		<div class="shop-button">
 				<img data-src="<?php bloginfo('template_directory'); ?>/images/icon-shop-logo.png" alt="pay icon" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy">
+				<!-- UPDATE LINK URL -->
+				<!-- UPDATE LINK URL -->
+				<!-- UPDATE LINK URL -->
 				<!-- UPDATE LINK URL -->
 				<a href="" class="button">Bariatric Advantage eShop <?php inline_svg('icon-shop'); ?></a>
 		</div>

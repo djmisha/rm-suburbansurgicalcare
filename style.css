@@ -5190,6 +5190,13 @@ article p ~ h2 {
   word-wrap: break-word;
 }
 
+@media only screen and (min-width: 1080px) {
+  .interior .content {
+    width: calc( 100% - 300px);
+    margin-right: 100px;
+  }
+}
+
 .interior .content a:hover {
   text-decoration: none;
 }
@@ -5820,6 +5827,7 @@ body.inside.tmpl_type_page_landing .interior {
 ------------------------ */
 aside {
   display: block;
+  margin-bottom: 40px;
 }
 
 .from-blog aside {
@@ -5838,9 +5846,8 @@ aside li {
   aside {
     width: 100%;
     display: block;
-  }
-  aside > div {
-    width: 100%;
+    position: relative;
+    margin-top: -60px;
   }
 }
 
@@ -5850,16 +5857,17 @@ aside li {
 
 .sidebar-block {
   background-color: #085287;
-  background-position: center top;
-  background-repeat: repeat-x;
   margin-bottom: 23px;
   padding: 30px 0;
-  border-top: 4px solid #085287;
+  border-top: 4px solid #e27500;
 }
 
 .sidebar-block .sb-heading {
+  font-family: "Lora", serif;
+  color: #fff;
   padding-left: 30px;
-  font-size: 27px;
+  font-size: 26px;
+  margin-bottom: 20px;
 }
 
 .sidebar-block ul {
@@ -5870,11 +5878,11 @@ aside li {
   font-size: 14px;
   color: #085287;
   font-family: "Open Sans", sans-serif;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .sidebar-block li:first-of-type {
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .sidebar-block li a {
@@ -5882,7 +5890,7 @@ aside li {
   text-decoration: none;
   width: 100%;
   display: block;
-  padding: 1px 0;
+  padding: 7px 0;
 }
 
 .sidebar-block li a:hover {
@@ -5890,10 +5898,38 @@ aside li {
   color: #085287;
 }
 
-.sidebar-block.model_tag:before {
-  bottom: 10px;
-  font-size: 10px;
-  text-shadow: none;
+.sb-locations {
+  background: #e3e9ec;
+}
+
+.sb-locations .sb-heading {
+  color: #085287;
+  position: relative;
+}
+
+.sb-locations .sb-heading i {
+  position: absolute;
+  right: 40px;
+  font-size: 30px;
+  color: #e27500;
+}
+
+.sb-locations .sb-the-locs {
+  border-top: 1px solid #b6babd;
+  margin: 30px;
+}
+
+.sb-locations .sb-the-locs span {
+  color: #e27500;
+  font-weight: bold;
+}
+
+.sb-locations .the-loc {
+  margin-top: 20px;
+}
+
+.sb-button {
+  margin-top: 20px;
 }
 
 /* ------------------------

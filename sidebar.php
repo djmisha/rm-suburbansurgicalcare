@@ -8,7 +8,7 @@
 					<?php wp_list_categories( array(
 						'title_li' 	=> '',
 						'depth'		=> 1,
-							// 'exclude'	=> 26
+						// 'exclude'	=> 26
 					) ); ?>
 				</ul>
 
@@ -33,9 +33,7 @@
 		</div>
 	<?php } ?>
 
-	<!-- Sidebar Related Pages -->
-
-	<?php if(!is_page(array('contact-us'))): ?>
+	<?php if(!is_page(array('contact-us'))): // Sidebar Related Pages ?>
 		<?php if(!this_is('gallery-child' || 'gallery') && get_post_type() != 'post' && get_post_type() != 'news-room'):
 			global $post;
 			$related_id = ( $post->post_parent ) ? $post->post_parent : $post->ID;
@@ -71,5 +69,47 @@
 	<?php endif; ?>
 	 
 
+
+	<div class="sidebar-block sb-locations">
+		<div class="sb-heading">Locations<i class="fas fa-map-marker-alt"></i></div>
+		<div class="sb-the-locs">
+			<?php if(have_rows('locations', 'option')): ?>
+				<?php while(have_rows('locations', 'option')): the_row(); ?>
+					<div class="the-loc">
+						<span><?php the_sub_field('name', 'option'); ?></span><br>
+						<a href="<?php the_sub_field('map_link', 'option'); ?>" class="track-outbound loc-name" data-label="Address - Footer" target="_blank"  rel="noopener">
+							<?php the_sub_field('address', 'option'); ?><br /> <?php the_sub_field('city', 'option'); ?>
+						</a>
+						<div class="loc-phone">
+							<a href="<?php the_sub_field('phone_link', 'option'); ?>" class="track-outbound" data-label="Phone - Footer">
+								Phone: <?php the_sub_field('phone', 'option'); ?></a>
+								<br>
+								Fax: <?php the_sub_field('fax', 'option'); ?>
+						</div>
+						<a href="<?php the_sub_field('map_link', 'option'); ?>" class="track-outbound loc-map-directions" data-label="Address - Footer" target="_blank" rel="noopener">
+							Map & Directions
+						</a>
+					</div>
+				<?php endwhile; ?>
+			<?php endif; ?>
+		</div>
+	</div>
+
+
+
+	<div class="sb-button">
+		<a href="<?php the_field('button_video', 6); ?>">
+			<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/icon-sb-video.png" alt="video icon">
+		</a>
+	</div>
+	<div class="sb-button">
+			<!-- UPDATE LINK URL -->
+			<!-- UPDATE LINK URL -->
+			<!-- UPDATE LINK URL -->
+			<!-- UPDATE LINK URL -->
+		<a href="<?php bloginfo('template_directory'); ?>">
+			<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/icon-sb-shop.png" alt="video icon">
+		</a>
+	</div>
 
 </aside>

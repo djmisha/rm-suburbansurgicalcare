@@ -123,6 +123,10 @@ article p ~ h2 {
 	
 
 	.content {
+		@include media($desktop) {
+			width: calc( 100% - 300px);
+			margin-right: 100px;
+		}
 		overflow-wrap: break-word;
 		word-wrap: break-word;
 		a:hover {
