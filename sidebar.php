@@ -77,16 +77,16 @@
 				<?php while(have_rows('locations', 'option')): the_row(); ?>
 					<div class="the-loc">
 						<span><?php the_sub_field('name', 'option'); ?></span><br>
-						<a href="<?php the_sub_field('map_link', 'option'); ?>" class="track-outbound loc-name" data-label="Address - Footer" target="_blank"  rel="noopener">
+						<a href="<?php the_sub_field('map_link', 'option'); ?>" class="track-outbound loc-name" data-label="Address - Sidebar" target="_blank"  rel="noopener">
 							<?php the_sub_field('address', 'option'); ?><br /> <?php the_sub_field('city', 'option'); ?>
 						</a>
 						<div class="loc-phone">
-							<a href="<?php the_sub_field('phone_link', 'option'); ?>" class="track-outbound" data-label="Phone - Footer">
+							<a href="<?php the_sub_field('phone_link', 'option'); ?>" class="track-outbound" data-label="Phone - Sidebar">
 								Phone: <?php the_sub_field('phone', 'option'); ?></a>
 								<br>
 								Fax: <?php the_sub_field('fax', 'option'); ?>
 						</div>
-						<a href="<?php the_sub_field('map_link', 'option'); ?>" class="track-outbound loc-map-directions" data-label="Address - Footer" target="_blank" rel="noopener">
+						<a href="<?php the_sub_field('map_link', 'option'); ?>" class="track-outbound loc-map-directions" data-label="Address - Sidebar" target="_blank" rel="noopener">
 							Map & Directions
 						</a>
 					</div>

@@ -3,6 +3,9 @@
 	@include media($desktop) {
 		margin-bottom: 0;
 		padding-bottom: 100px;
+		width: calc(100% - 350px);
+		// padding-right: 50px;
+		// border: 1px solid red;
 	}
 	b,
 	strong {
@@ -31,7 +34,7 @@
 }
 
 .from-blog h1 {
-	color: $tertiaryColor;
+	color: $primaryColor;
 	font-family: $secondaryFont;
 }
 
@@ -124,8 +127,9 @@ article p ~ h2 {
 
 	.content {
 		@include media($desktop) {
-			width: calc( 100% - 300px);
-			margin-right: 100px;
+			// width: calc( 100% - 300px);
+			// margin-right: 100px;
+			padding-right: 50px;
 		}
 		overflow-wrap: break-word;
 		word-wrap: break-word;

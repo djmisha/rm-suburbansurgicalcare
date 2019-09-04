@@ -22,7 +22,7 @@
 					?>
 			</div>
 		<?php endwhile; endif;?>
-		<?php get_sidebar()?>
 		</article>
+		<?php get_sidebar()?>
 	</section>
 <?php get_footer()?>
