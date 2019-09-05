@@ -1,5 +1,49 @@
 
 
+.sticky-footer-bar {
+	background: $secondaryColor;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.bar-phones {
+		a {
+			color: $lightColor;
+			text-decoration: none;
+		}
+		svg {
+			width: 17px;
+			height: 28px;
+		}
+	}
+	.bar-contact {
+		font-family: $secondaryFont;
+		color: $lightColor;
+		font-size: 22px;
+	}
+	.bar-or {
+		width: 30px;
+		height: 30px;
+		background: #b46e26;
+		border-radius: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $lightColor;
+		font-family: $secondaryFont;
+		font-style: italic;
+	}
+	.button {
+		background: #fff;
+		color: $primaryColor;
+		font-weight: 600;
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+	svg {
+		path {fill:$lightColor;}
+	}
+}
 
 
 /*====================================

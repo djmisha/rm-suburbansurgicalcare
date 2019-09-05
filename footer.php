@@ -1,4 +1,25 @@
 
+<section class="sticky-footer-bar">
+	<div class="bar-contact">Contact Us</div>
+	<div class="bar-phones">
+		Call  <?php inline_svg('icon-phone'); ?>
+		<?php if(have_rows('locations', 'option')): ?>
+			<?php while(have_rows('locations', 'option')): the_row(); ?>
+				<a href="<?php the_sub_field('phone_link'); ?>" class="track-outbound head-phone" data-label="Phone - Header"><?php the_sub_field('phone'); ?></a>
+			<?php endwhile; ?>
+		<?php endif; ?>
+	</div>
+	<div class="bar-or">or</div>
+	<div class="bar-buttons">
+		<a href="" class="button"><?php inline_svg('icon-email'); ?> Email Us</a>
+	</div>
+	<div class="bar-or">or</div>
+	<div class="bar-buttons">
+		<a href="" class="button"><?php inline_svg('icon-patient'); ?>Patient Portal</a>
+	</div>
+</section>
+
+
 <footer>
 
 	<section class="upper-footer footer-parallax will-parallax parallax-welcome b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-footer.jpg">

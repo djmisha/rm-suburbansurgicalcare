@@ -5934,6 +5934,67 @@ aside li {
 /* ------------------------
 	Footer Layout
 ------------------------ */
+.sticky-footer-bar {
+  background: #e27500;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sticky-footer-bar .bar-phones a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sticky-footer-bar .bar-phones svg {
+  width: 17px;
+  height: 28px;
+}
+
+.sticky-footer-bar .bar-contact {
+  font-family: "Lora", serif;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.sticky-footer-bar .bar-or {
+  width: 30px;
+  height: 30px;
+  background: #b46e26;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  font-family: "Lora", serif;
+  font-style: italic;
+}
+
+.sticky-footer-bar .button {
+  background: #fff;
+  color: #085287;
+  font-weight: 600;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.sticky-footer-bar svg path {
+  fill: #ffffff;
+}
+
 /*====================================
 =            Upper Footer            =
 ====================================*/
@@ -6457,6 +6518,23 @@ footer .footer-logo {
 /* ------------------------
 	Home Page
 ------------------------ */
+header,
+.welcome-parallax,
+.welcome-bottom,
+.home-aboutus,
+.home-doctors,
+.home-weight,
+.home-featured,
+.home-orbera,
+.home-news,
+.upper-footer,
+.middle-footer,
+.lower-footer,
+.footer-logo,
+.footer-map footer {
+  display: none !important;
+}
+
 .home h2 {
   font-family: "Lora", serif;
   color: #085287;
@@ -7516,157 +7594,7 @@ footer .footer-logo {
   color: #085287;
 }
 
-.blog .wp-caption.alignright,
-.blog .wp-caption.alignleft,
-.tmpl_type_category .wp-caption.alignright,
-.tmpl_type_category .wp-caption.alignleft,
-.tmpl_type_archive .wp-caption.alignright,
-.tmpl_type_archive .wp-caption.alignleft,
-.from-blog .wp-caption.alignright,
-.from-blog .wp-caption.alignleft {
-  float: none;
-  margin: 20px auto;
-}
-
 .tmpl_type_single .button {
-  text-decoration: none;
-}
-
-.search-bar {
-  background-color: #282828;
-  border-bottom: 2px solid #282828;
-  background-color: rgba(40, 40, 40, 0.2);
-}
-
-@media only screen and (min-width: 768px) {
-  .search-bar {
-    display: none;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .search-bar > div {
-    width: 220px;
-  }
-}
-
-.search-bar form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.search-bar .search-input {
-  height: 40px;
-  border: 1px solid #282828;
-  margin-right: 10px;
-}
-
-.search-bar .button {
-  padding: 0 15px;
-  height: 40px;
-  border: 1px solid #282828;
-  line-height: 20px;
-}
-
-.search-bar .search-form {
-  margin-bottom: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  .search-bar .search-form {
-    margin-bottom: 0;
-  }
-}
-
-.search-bar .search-form form {
-  display: block;
-}
-
-@media only screen and (min-width: 768px) {
-  .search-bar .search-form form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-.search-bar .search-form form input {
-  padding: 10px;
-  max-width: 150px;
-}
-
-@media only screen and (min-width: 768px) {
-  .search-bar .search-form form input {
-    max-width: 205px;
-  }
-}
-
-.cat-select {
-  position: relative;
-}
-
-.cat-select .cat-options {
-  color: #000000;
-  font-size: 21px;
-  padding: 17px 14px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-}
-
-.cat-select .cat-options i {
-  color: #282828;
-  position: relative;
-  left: 0px;
-  top: 3px;
-  font-size: 30px;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-
-@media only screen and (min-width: 768px) {
-  .cat-select .cat-options {
-    margin-bottom: 0;
-  }
-}
-
-.cat-select .cat-options:after {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.cat-select .cats {
-  position: absolute;
-  display: none;
-  width: 300px;
-  z-index: 100;
-  background: #0b6fb7;
-  margin: 0;
-  list-style: none;
-  padding: 20px 0;
-  margin-top: -10px;
-  text-align: left;
-}
-
-@media only screen and (min-width: 768px) {
-  .cat-select .cats {
-    margin-top: 0;
-  }
-}
-
-.cat-select .cats li {
-  padding: 5px 20px;
-}
-
-.cat-select .cats li a {
-  color: #ffffff;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
