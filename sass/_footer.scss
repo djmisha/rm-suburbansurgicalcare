@@ -1,17 +1,40 @@
 
 
 .sticky-footer-bar {
+	z-index: 9999;
 	background: $secondaryColor;
 	height: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	display: none;
+	@include media($desktop) {
+		display: flex;
+		position: fixed;
+		right: 0;
+		left: 0;
+		bottom: -60px;
+		transition: all .3s ease-in-out;
+	}
+	&.change-up-sticky-footer-bar {
+		bottom: 0;
+	}
 	.bar-phones {
+		font-weight: 600;
+		color: $lightColor;
+		margin-right: 40px;
 		a {
 			color: $lightColor;
 			text-decoration: none;
+			&:first-of-type {
+				margin-right: 20px;
+			}
 		}
+		position: relative;
 		svg {
+			top: -5px;
+			left: -25px;
+			position: absolute;
 			width: 17px;
 			height: 28px;
 		}
@@ -20,6 +43,8 @@
 		font-family: $secondaryFont;
 		color: $lightColor;
 		font-size: 22px;
+		width: 300px;
+		text-align: left;
 	}
 	.bar-or {
 		width: 30px;
@@ -40,8 +65,21 @@
 		padding-top: 3px;
 		padding-bottom: 3px;
 	}
+	.button-email, .button-patient {position: relative;}
+	.button-email svg {
+		position: absolute;
+		left: -35px;
+		width: 27px;
+		height: 27px;
+	}
+	.button-patient svg {
+		width: 13px;
+		height: 28px;
+		position: absolute;
+		left: -20px;
+	}	
 	svg {
-		path {fill:$lightColor;}
+		path, polygon {fill:$lightColor;}
 	}
 }
 

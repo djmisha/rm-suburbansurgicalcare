@@ -4854,7 +4854,7 @@ main,
 
 .hover-menu .main-menu > li a:hover {
   color: #ffffff;
-  background: #053557;
+  background: #052f4d;
 }
 
 .hover-menu a {
@@ -5061,6 +5061,7 @@ main,
 .from-blog h1 {
   color: #085287;
   font-family: "Lora", serif;
+  margin-top: 0;
 }
 
 article > h2 {
@@ -5935,6 +5936,7 @@ aside li {
 	Footer Layout
 ------------------------ */
 .sticky-footer-bar {
+  z-index: 9999;
   background: #e27500;
   height: 60px;
   display: -webkit-box;
@@ -5946,6 +5948,32 @@ aside li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  display: none;
+}
+
+@media only screen and (min-width: 1080px) {
+  .sticky-footer-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: -60px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+}
+
+.sticky-footer-bar.change-up-sticky-footer-bar {
+  bottom: 0;
+}
+
+.sticky-footer-bar .bar-phones {
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: 40px;
+  position: relative;
 }
 
 .sticky-footer-bar .bar-phones a {
@@ -5953,7 +5981,14 @@ aside li {
   text-decoration: none;
 }
 
+.sticky-footer-bar .bar-phones a:first-of-type {
+  margin-right: 20px;
+}
+
 .sticky-footer-bar .bar-phones svg {
+  top: -5px;
+  left: -25px;
+  position: absolute;
   width: 17px;
   height: 28px;
 }
@@ -5962,6 +5997,8 @@ aside li {
   font-family: "Lora", serif;
   color: #ffffff;
   font-size: 22px;
+  width: 300px;
+  text-align: left;
 }
 
 .sticky-footer-bar .bar-or {
@@ -5991,7 +6028,25 @@ aside li {
   padding-bottom: 3px;
 }
 
-.sticky-footer-bar svg path {
+.sticky-footer-bar .button-email, .sticky-footer-bar .button-patient {
+  position: relative;
+}
+
+.sticky-footer-bar .button-email svg {
+  position: absolute;
+  left: -35px;
+  width: 27px;
+  height: 27px;
+}
+
+.sticky-footer-bar .button-patient svg {
+  width: 13px;
+  height: 28px;
+  position: absolute;
+  left: -20px;
+}
+
+.sticky-footer-bar svg path, .sticky-footer-bar svg polygon {
   fill: #ffffff;
 }
 
@@ -6518,23 +6573,6 @@ footer .footer-logo {
 /* ------------------------
 	Home Page
 ------------------------ */
-header,
-.welcome-parallax,
-.welcome-bottom,
-.home-aboutus,
-.home-doctors,
-.home-weight,
-.home-featured,
-.home-orbera,
-.home-news,
-.upper-footer,
-.middle-footer,
-.lower-footer,
-.footer-logo,
-.footer-map footer {
-  display: none !important;
-}
-
 .home h2 {
   font-family: "Lora", serif;
   color: #085287;
@@ -6566,9 +6604,8 @@ header,
 
 .welcome {
   background: #fff url("images/bg-welcome.jpg") top center no-repeat;
-  background-size: cover;
-  background-position-x: right -150px;
-  background-position-y: top 140px;
+  background-position-x: -1250px;
+  background-position-y: 120px;
   height: 687px;
   position: relative;
   overflow: hidden;
@@ -6887,29 +6924,34 @@ header,
   position: relative;
   overflow: hidden;
   background-size: cover;
-  height: 670px;
+  height: 600px;
 }
 
 @media only screen and (min-width: 768px) {
   .home-doctors {
     height: 817px;
-    padding-top: 0px;
+    padding-top: 40px;
   }
 }
 
 @media only screen and (min-width: 1080px) {
   .home-doctors {
-    padding-top: 40px;
-    height: 517px;
+    padding-top: 80px;
+    height: 557px;
   }
 }
 
 .home-doctors .our-docs {
   position: absolute;
   bottom: -60px;
-  right: 0;
-  left: 30px;
-  width: 500px;
+  left: 20px;
+  right: 0px;
+}
+
+@media only screen and (min-width: 446px) {
+  .home-doctors .our-docs {
+    bottom: -100px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -6924,7 +6966,7 @@ header,
 @media only screen and (min-width: 1080px) {
   .home-doctors .our-docs {
     width: auto;
-    top: -40px;
+    top: 0px;
     right: auto;
     left: calc(50% - 640px);
     height: auto;
@@ -6947,6 +6989,7 @@ header,
 }
 
 .home-doctors .the-docs h3 {
+  margin-top: 0;
   padding-top: 30px;
   color: #ffffff;
   margin-bottom: 0;
@@ -6955,6 +6998,7 @@ header,
 
 @media only screen and (min-width: 768px) {
   .home-doctors .the-docs h3 {
+    padding-top: 30px;
     font-size: 26px;
   }
 }
@@ -7592,6 +7636,10 @@ header,
 .tmpl_type_archive .next-prev i,
 .from-blog .next-prev i {
   color: #085287;
+}
+
+.tmpl_type_single .meta-data {
+  margin-bottom: 0px;
 }
 
 .tmpl_type_single .button {

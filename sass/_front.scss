@@ -2,7 +2,7 @@ header,
 .welcome-parallax,
 .welcome-bottom,
 .home-aboutus,
-.home-doctors,
+// .home-doctors,
 .home-weight,
 .home-featured,
 .home-orbera,
@@ -14,7 +14,7 @@ header,
 .footer-map
 footer 
 {
-	display: none !important;
+	// display: none !important;
 }
 
 
@@ -49,9 +49,11 @@ footer
 
 .welcome {
 	background: #fff url("images/bg-welcome.jpg") top center no-repeat;
-	background-size: cover;
-	background-position-x: right -150px; 
-	background-position-y: top 140px; 
+	// background-size: cover;
+	// background-position: center right;
+	background-position-x: -1250px; 
+	// background-position: center;
+	background-position-y:  120px; 
 	height: 687px;
 	position: relative;
 	overflow: hidden;
@@ -282,21 +284,23 @@ footer
 	position: relative;
 	overflow: hidden;
 	background-size: cover;
-	height: 670px;
+	height: 600px;
 	@include media($tablet) {
 		height: 817px;
-		padding-top: 0px;
+		padding-top: 40px;
 	}
 	@include media($desktop) {
-		padding-top: 40px;
-		height: 517px;
+		padding-top: 80px;
+		height: 557px;
 	}
 	.our-docs {
 		position: absolute;
 		bottom: -60px;
-		right: 0;
-		left: 30px;
-		width: 500px;
+		left: 20px;
+		right: 0px;
+		@include media(446px) {
+			bottom: -100px;
+		}
 		@include media($tablet) {
 			left: 60px;
 			bottom: auto;
@@ -305,7 +309,7 @@ footer
 		}
 		@include media($desktop) {
 			width: auto;
-			top: -40px;
+			top: 0px;
 			right: auto;
 			left: calc(50% - 640px;);
 			height: auto;
@@ -326,11 +330,13 @@ footer
 			margin-left: calc(50% + 200px);
 		}
 		h3 {
+			margin-top: 0;
 			padding-top: 30px;
 			color: $lightColor;
 			margin-bottom: 0;
 			font-family: $secondaryFont;
 			@include media($tablet) {
+				padding-top: 30px;
 				font-size: 26px;
 			}
 		}

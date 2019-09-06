@@ -25,9 +25,9 @@
 		=            Wow INIT            =
 		================================*/
 
-		new WOW({
-			// mobile: false,
-		}).init();
+		// new WOW({
+		// 	// mobile: false,
+		// }).init();
 
 		/*=============================
 		=            Blazy            =
@@ -41,23 +41,19 @@
 		===================================*/
 
 		/* Change Up Navigation on Scroll Down */
-		// $(window).scroll(function () {
-		// 	if ($(window).scrollTop() > 50 && $('html').hasClass('not--device') 
-		// 		&& 
-		// 		$(window).width() > 1080
-		// 		) 
-		// 	{
-		// 		$('.nav-bar').addClass('change-up-nav');
-		// 	} else {
-		// 		$('.nav-bar').removeClass('change-up-nav');
-		// 	}
-	 //    });
+		$(window).scroll(function () {
+			if ($(window).scrollTop() > 150 && $('html').hasClass('not--device') 
+				&& 
+				$(window).width() > 1080
+				) 
+			{
+				$('.sticky-footer-bar').addClass('change-up-sticky-footer-bar');
+			} else {
+				$('.sticky-footer-bar').removeClass('change-up-sticky-footer-bar');
+			}
+	    });
 
 
-	 	// $('.latest-posts li').clone().appendTo('ul.latest-posts');
-	 	// $('.latest-posts li').clone().appendTo('ul.latest-posts');
-
-	
 	
 		
 		/*================================
@@ -82,7 +78,7 @@
 						$(".footer-parallax").parallax("center", -0.2, true);
 						// $(".home-reviews-parallax").parallax("center", -0.2, true);
 						// $('.parallax-home-breast').parallax('center', -0.3, true , 'is-parallaxing');
-						$(".parallax-internal-header").parallax("center", -0.1, true);
+						// $(".parallax-internal-header").parallax("center", -0.1, true);
 					});
 				}
 			}
@@ -93,34 +89,34 @@
 		=            Gallery Nudity Pop Up            =
 		=============================================*/
 
-		if ($("body.rmgallery-child").length) {
-			if ($.cookie("gallerypop") == null) {
-				console.log(theme_path);
-				$.fancybox.open({
-					src: theme_path + "/popup.php",
-					type: "ajax",
-					opts: {
-						scrolling: "no",
-						transitionEffect: "fade",
-						modal: true,
-						helpers: {
-							overlay: {
-								css: {
-									background: "rgba(0, 0, 0, 0.96)"
-								}
-							}
-						},
-						live: true,
-						afterClose: function() {
-							$.cookie("gallerypop", "rmg", {
-								expires: 1,
-								path: "/"
-							});
-						}
-					}
-				});
-			} //end cookies check
-		}
+		// if ($("body.rmgallery-child").length) {
+		// 	if ($.cookie("gallerypop") == null) {
+		// 		console.log(theme_path);
+		// 		$.fancybox.open({
+		// 			src: theme_path + "/popup.php",
+		// 			type: "ajax",
+		// 			opts: {
+		// 				scrolling: "no",
+		// 				transitionEffect: "fade",
+		// 				modal: true,
+		// 				helpers: {
+		// 					overlay: {
+		// 						css: {
+		// 							background: "rgba(0, 0, 0, 0.96)"
+		// 						}
+		// 					}
+		// 				},
+		// 				live: true,
+		// 				afterClose: function() {
+		// 					$.cookie("gallerypop", "rmg", {
+		// 						expires: 1,
+		// 						path: "/"
+		// 					});
+		// 				}
+		// 			}
+		// 		});
+		// 	} //end cookies check
+		// }
 		
 
 
@@ -145,25 +141,25 @@
 		=            Custom Landing Page Header, Append Items            =
 		================================================================*/
 
-		function checkWidth() {
-			var $window = $(window);
-			var windowsize = $window.width();
-			if (windowsize >= $desktop) {
-				$(".tmpl_type_page_landing .site-crumbs").appendTo("header");
-				$(".tmpl_type_page_landing .page-title").appendTo("header");
-				// $(".tmpl_type_page_landing .flexible-basic-content:first-of-type()").appendTo("header");
+		// function checkWidth() {
+		// 	var $window = $(window);
+		// 	var windowsize = $window.width();
+		// 	if (windowsize >= $desktop) {
+		// 		$(".tmpl_type_page_landing .site-crumbs").appendTo("header");
+		// 		$(".tmpl_type_page_landing .page-title").appendTo("header");
+		// 		// $(".tmpl_type_page_landing .flexible-basic-content:first-of-type()").appendTo("header");
 
-			  }
-			  else {
-			  	$(".tmpl_type_page_landing .site-crumbs").prependTo(".interior");
-			  	$(".tmpl_type_page_landing .page-title").prependTo(".content");
-			  	// $(".tmpl_type_page_landing .flexible-basic-content:first-of-type()").prependTo(".content");
-			  }
-			}
-		// Execute on load
-		checkWidth();
-		// Bind event listener
-		$(window).resize(checkWidth);
+		// 	  }
+		// 	  else {
+		// 	  	$(".tmpl_type_page_landing .site-crumbs").prependTo(".interior");
+		// 	  	$(".tmpl_type_page_landing .page-title").prependTo(".content");
+		// 	  	// $(".tmpl_type_page_landing .flexible-basic-content:first-of-type()").prependTo(".content");
+		// 	  }
+		// 	}
+		// // Execute on load
+		// checkWidth();
+		// // Bind event listener
+		// $(window).resize(checkWidth);
 
 
 

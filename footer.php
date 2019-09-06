@@ -2,7 +2,7 @@
 <section class="sticky-footer-bar">
 	<div class="bar-contact">Contact Us</div>
 	<div class="bar-phones">
-		Call  <?php inline_svg('icon-phone'); ?>
+		<?php inline_svg('icon-phone'); ?>
 		<?php if(have_rows('locations', 'option')): ?>
 			<?php while(have_rows('locations', 'option')): the_row(); ?>
 				<a href="<?php the_sub_field('phone_link'); ?>" class="track-outbound head-phone" data-label="Phone - Header"><?php the_sub_field('phone'); ?></a>
@@ -10,12 +10,14 @@
 		<?php endif; ?>
 	</div>
 	<div class="bar-or">or</div>
-	<div class="bar-buttons">
-		<a href="" class="button"><?php inline_svg('icon-email'); ?> Email Us</a>
+	<div class="bar-buttons button-email">
+		<?php inline_svg('icon-email'); ?>
+		<a href="" class="button"> Email Us</a> 
 	</div>
 	<div class="bar-or">or</div>
-	<div class="bar-buttons">
-		<a href="" class="button"><?php inline_svg('icon-patient'); ?>Patient Portal</a>
+	<div class="bar-buttons button-patient">
+		<?php inline_svg('icon-patient'); ?>
+		<a href="" class="button">Patient Portal</a>
 	</div>
 </section>
 
