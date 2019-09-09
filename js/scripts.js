@@ -216,3 +216,5 @@ var linksToTrack = document.querySelectorAll(".track-outbound");
 for (var i = 0; i < linksToTrack.length; i++) {
 	linksToTrack[i].addEventListener("click", trackOutboundLink, false);
 }
+
+

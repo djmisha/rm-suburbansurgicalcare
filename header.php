@@ -22,7 +22,7 @@
 
 <a href="#skiptomaincontent" style="display:none;">Skip to main content</a>
 
-<header class="site-header <?php echo is_front_page() ? 'front-header' : 'int-header'; ?>" <?php get__header__image(); ?> >
+<header class="site-header <?php echo is_front_page() ? 'front-header' : 'int-header'; ?>">
 
 	<div class="nav-bar">
 		<div class="menu-trigger">
@@ -76,12 +76,12 @@
 		<?php // do nothing if homepage  ?>
 	<?php elseif(this_is('gallery-case')): ?>
 		<?php $category_title =  get_the_title($post->in_cat_ID); ?>
-		<h1><?php echo $category_title ?> Photos</h1>
+		<h1><?php echo $category_title ?> Gallery</h1>
 	<?php elseif(this_is('gallery-child')): ?>
 		<?php $category_title =  get_the_title($post->in_cat_ID); ?>
-		<h1><?php //echo $category_title ?> Photo Gallery</h1>
+		<h1><?php echo $category_title ?>  Gallery</h1>
 	<?php elseif(this_is('gallery')): ?>
-		<h1>Photo Gallery</h1>
+		<h1>Before &amp; After Gallery</h1>
 	<?php elseif (is_search()): ?>
 		<div class="heading-text">Search Results</div>
 	<?php elseif (is_home() or is_archive()): ?>

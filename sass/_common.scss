@@ -97,10 +97,8 @@ a.page-numbers.current,
 }
 
 .case-prev, .case-next {
-	padding: 15px 30px !important;
-	@include media($tablet) {
-		padding: 15px 40px !important;
-	}
+	padding-right: 30px;
+	padding-left: 30px;
 }
 
 // .after-review-sprinkle .button {

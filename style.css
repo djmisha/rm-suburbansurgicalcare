@@ -3837,13 +3837,8 @@ a.page-numbers.current:hover,
 }
 
 .case-prev, .case-next {
-  padding: 15px 30px !important;
-}
-
-@media only screen and (min-width: 768px) {
-  .case-prev, .case-next {
-    padding: 15px 40px !important;
-  }
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -8024,7 +8019,7 @@ footer .footer-logo {
 ========================================*/
 .tmpl_type_rmg_archive h2 {
   text-align: center;
-  margin-top: 0;
+  margin-top: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -8107,7 +8102,8 @@ footer .footer-logo {
 }
 
 .tmpl_type_rmg_archive .gallery-section {
-  height: 215px;
+  height: 265px;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -8131,6 +8127,11 @@ footer .footer-logo {
 
 .gal-title a {
   color: #e27500;
+}
+
+.tmpl_type_rmg_category_child .interior,
+.tmpl_type_rmg_category_parent .interior {
+  padding-top: 40px;
 }
 
 .tmpl_type_rmg_category_child .gallery-cat-wrap,
@@ -8165,7 +8166,7 @@ footer .footer-logo {
 @media only screen and (min-width: 768px) {
   .tmpl_type_rmg_category_child .bna-group,
   .tmpl_type_rmg_category_parent .bna-group {
-    width: 48%;
+    width: 30%;
   }
 }
 
@@ -8173,7 +8174,7 @@ footer .footer-logo {
 .tmpl_type_rmg_category_parent .bna-group h2 {
   font-size: 20px;
   text-align: center;
-  color: #707479;
+  color: #085287;
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 100;
@@ -8219,6 +8220,7 @@ footer .footer-logo {
   opacity: 0;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
+  font-size: 12px;
 }
 
 .tmpl_type_rmg_category_child .bna-group .hover-overlay i,
@@ -8330,6 +8332,7 @@ footer .footer-logo {
 .tmpl_type_rmg_single_case .interior {
   display: block;
   padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -8382,7 +8385,7 @@ footer .footer-logo {
 
 @media only screen and (min-width: 768px) {
   .tmpl_type_rmg_single_case .img-wrap {
-    width: 90%;
+    width: calc(100% - 420px);
   }
 }
 
@@ -8435,26 +8438,48 @@ footer .footer-logo {
   }
 }
 
-.tmpl_type_rmg_single_case .patient-details {
-  width: 98%;
-  text-align: left;
-  line-height: 20px;
-  margin-top: 30px;
+.tmpl_type_rmg_single_case .case-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-@media only screen and (min-width: 1080px) {
+.tmpl_type_rmg_single_case .patient-details {
+  width: 100%;
+  height: auto;
+  background: transparent;
+  text-align: left;
+  padding: 30px 0 20px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.tmpl_type_rmg_single_case .patient-details br {
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
   .tmpl_type_rmg_single_case .patient-details {
-    margin-top: 80px;
-    width: 70%;
+    padding: 30px 35px 20px 35px;
+    width: 400px;
+    margin-left: 20px;
   }
 }
 
 .tmpl_type_rmg_single_case .patient-details span {
   font-family: "Lora", serif;
-  font-size: 25px;
   color: #085287;
+  font-size: 35px;
   padding-bottom: 20px;
   display: block;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
 }
 
 .notice-body-everything h2,
@@ -8550,10 +8575,10 @@ footer .footer-logo {
 
 .button-gallery-prev i,
 .button-gallery-next i {
-  font-size: 45px;
+  font-size: 35px;
   line-height: 0;
   position: relative;
-  top: 11px;
+  top: 8px;
 }
 
 .button-gallery-prev i {

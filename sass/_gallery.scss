@@ -5,7 +5,7 @@
 .tmpl_type_rmg_archive {
 	h2 {
 		text-align: center;
-		margin-top: 0;
+		margin-top: 20px;
 		@include media($tablet) {
 			font-size: 26px;
 		}
@@ -74,7 +74,8 @@
 		}
 	}
 	.gallery-section {
-		height: 215px;
+		height: 265px;
+		background-position: center center; 
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
@@ -125,6 +126,9 @@
 
 .tmpl_type_rmg_category_child,
 .tmpl_type_rmg_category_parent {
+	.interior {
+		padding-top: 40px;
+	}
 	.gallery-cat-wrap {
 		// @include media($tablet) {
 			display: flex;
@@ -144,7 +148,7 @@
 		margin-bottom: 100px;
 		position: relative;
 		@include media($tablet) {
-			width: 48%;
+			width: 30%;
 		}
 
 		&:hover {
@@ -156,8 +160,8 @@
 		h2 {
 			font-size: 20px;
 			text-align: center;
-			// color: $darkColor;
-			color: #707479;
+			color: $primaryColor;
+			// color: #707479;
 			margin-top: 0;
 			margin-bottom: 10px;
 			font-weight: 100;
@@ -187,6 +191,7 @@
 				position: absolute;
 				opacity: 0;
 				transition: all .25s ease-in-out;
+				font-size: 12px;
 			}
 			i {
 				font-size: 40px;
@@ -286,6 +291,7 @@
 	.interior {
 		display: block;
 		padding-bottom: 40px;
+		padding-top: 40px;
 		@include media($tablet) {
 			padding-bottom: 120px;
 		}
@@ -293,19 +299,11 @@
 	.single-case-title {
 		// margin-top: 40px;
 	}
-	.single-case-border {
-		// border: 1px solid rgba($primaryColor, .4);
-		// padding: 20px 15px; 
-		// @include media($tablet) {
-		// 	padding: 40px 15px; 
-		// }
-	}
 	.single-case-content {
 		// background-color: #f6f7f6;
 		margin-top: 20px;
 		@include media($tablet) {
-		margin-top: 40px;
-			
+			margin-top: 40px;
 		}
 			// padding: 25px;
 		}
@@ -327,13 +325,15 @@
 			// width: 80%;
 		}
 	}
+
 	.img-wrap {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		width: 100%;
 		@include media($tablet) {
-			width: 90%;
+			width: calc(100% - 420px);
+			// width: 60%;
 		}
 		> div {
 			position: relative;
@@ -366,10 +366,8 @@
 		.before-img,
 		.after-img {
 			position: relative;
-
 			&:after {
 				content: "";
-				// background: url("images/bg-bna-watermark.png");
 				background-size: 100%;
 				background-repeat: no-repeat;
 				position: absolute;
@@ -387,22 +385,38 @@
 		}
 	}
 
+	.case-wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		// justify-content: flex-start;
+	}
+
 	.patient-details {
-		width: 98%;
+		width: 100%;
+		height: auto;
+		background: transparent;
 		text-align: left;
+		padding: 30px 0 20px 0;
+		// color: $lightColor;
+		font-size: 14px;
 		line-height: 20px;
-		// padding: 15px 35px 20px 35px;
-		margin-top: 30px;
-		@include media($desktop) {
-			margin-top: 80px;
-			width: 70%;
+		br {
+			margin-bottom: 30px;
+		}
+		@include media($tablet) {
+			padding: 30px 35px 20px 35px;
+			width: 400px;
+			margin-left: 20px;
 		}
 		span {
 			font-family: $secondaryFont;
-			font-size: 25px;
 			color: $primaryColor;
+			font-size: 35px;
 			padding-bottom: 20px;
 			display: block;
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 20px;
 		}
 	}
 }
@@ -477,10 +491,10 @@
 
 .button-gallery-prev i, 
 .button-gallery-next i { 
-	font-size: 45px;
+	font-size: 35px;
 	line-height: 0;
 	position: relative;
-	top: 11px;
+	top: 8px;
 }
 .button-gallery-prev i {
 	right: 10px;

@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 
-<main class="interior b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-about.jpg">
+<main class="interior">
 
 	<div class="gallery-content">
 		<?php  echo rmg_archive_content(); ?>
@@ -29,9 +29,9 @@
 
 		<div class="cat-container">
 			<a href="<?php echo $postURL; ?>">
-				<h2><?php the_title();?></h2>
 					<div class="gallery-section" style="background-image: url(<?php echo $catBg; ?>)">
 				</div>
+				<h2><?php the_title();?></h2>
 			</a>
 			<ul>
 				<?php
