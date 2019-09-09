@@ -14,6 +14,14 @@
 	<?php wp_head()?>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-9722801-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-9722801-1');
+	</script>
 
 
 </head>
@@ -22,7 +30,7 @@
 
 <a href="#skiptomaincontent" style="display:none;">Skip to main content</a>
 
-<header class="site-header <?php echo is_front_page() ? 'front-header' : 'int-header'; ?>">
+<header class="site-header <?php echo is_front_page() ? 'front-header' : 'int-header b-lazy'; ?>" <?php get__header__image(); ?> >
 
 	<div class="nav-bar">
 		<div class="menu-trigger">

@@ -12,12 +12,12 @@
 	<div class="bar-or">or</div>
 	<div class="bar-buttons button-email">
 		<?php inline_svg('icon-email'); ?>
-		<a href="" class="button"> Email Us</a> 
+		<a href="<?php bloginfo('url'); ?>/contact-us/" class="button"> Email Us</a> 
 	</div>
 	<div class="bar-or">or</div>
 	<div class="bar-buttons button-patient">
 		<?php inline_svg('icon-patient'); ?>
-		<a href="" class="button">Patient Portal</a>
+		<a href="https://mypay.poscorp.com/suburbansurgicalcare#/account/login" class="button" rel="nofollow noopener">Patient Portal</a>
 	</div>
 </section>
 
@@ -67,27 +67,18 @@
 		<div class="footer-social">
 			<div class="footer-headling">Stay Connected</div>
 			<a href="<?php the_field('facebook','options'); ?>" target="_blank" rel="noopener" title="facebook" aria-label="facebook"><i class="fab fa-facebook"></i></a>
-			<a href="<?php the_field('twitter','options'); ?>" target="_blank" rel="noopener" title="twitter" aria-label="twitter"><i class="fab fa-twitter"></i></a>
-			<a href="<?php the_field('instagram','options'); ?>" target="_blank" rel="noopener" title="instagram" aria-label="instagram"><i class="fab fa-instagram"></i></a>
 			<a href="<?php the_field('youtube','options'); ?>" target="_blank" rel="noopener" title="youtube" aria-label="youtube"><i class="fab fa-youtube"></i></a>
 		</div>
 		<div class="online-bill-pay">
 			<div class="footer-headling">Online Bill Pay</div>
-			<!-- UPDATE LINK URL -->
-			<!-- UPDATE LINK URL -->
-			<!-- UPDATE LINK URL -->
-			<!-- UPDATE LINK URL -->
-			<a href="" target="_blank" rel="nofollow noopener">
+	
+			<a href="https://mypay.poscorp.com/suburbansurgicalcare#/account/login" target="_blank" rel="nofollow noopener" target="_blank">
 				<img data-src="<?php bloginfo('template_directory'); ?>/images/icon-billpay.png" alt="pay icon" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy">
 			</a>
 		</div>
 		<div class="shop-button">
-				<img data-src="<?php bloginfo('template_directory'); ?>/images/icon-shop-logo.png" alt="pay icon" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy">
-				<!-- UPDATE LINK URL -->
-				<!-- UPDATE LINK URL -->
-				<!-- UPDATE LINK URL -->
-				<!-- UPDATE LINK URL -->
-				<a href="" class="button">Bariatric Advantage eShop <?php inline_svg('icon-shop'); ?></a>
+			<img data-src="<?php bloginfo('template_directory'); ?>/images/icon-shop-logo.png" alt="pay icon" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy">
+			<a href="https://suburbansurgicalcarespecialists.bariatricadvantage.com/" class="button" rel="noopener nofollow" target="_blank">Bariatric Advantage eShop <?php inline_svg('icon-shop'); ?></a>
 		</div>
 	</div>
 

@@ -330,7 +330,7 @@ footer .footer-logo {
 	padding-top: 40px !important;
 	padding-bottom: 40px;
 	@include media($desktop) {
-		padding-bottom: 80px;
+		padding-bottom: 140px;
 	}
 	.disclaimer {
 		font-style: italic;
@@ -350,7 +350,7 @@ footer .footer-logo {
 
 .copyright,
 .rm-sig {
-	display: inline-block;
+	display: block;
 	font-family: $primaryFont;
 	text-align: center;
 	color: $tertiaryColor;

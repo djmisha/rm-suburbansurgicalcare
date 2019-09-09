@@ -4499,7 +4499,7 @@ main,
 
 @media only screen and (min-width: 1080px) {
   .nav-bar-locations {
-    width: 250px;
+    width: 300px;
     position: absolute;
     right: calc(50% - 600px);
     left: auto;
@@ -4553,7 +4553,9 @@ main,
 
 /* Inside Page Headers */
 .int-header {
-  background: #e7ecef url("images/bg-header.jpg") center center no-repeat;
+  background-color: #e7ecef;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position-x: right -240px;
   height: 180px;
@@ -6366,7 +6368,7 @@ footer .footer-logo {
 
 @media only screen and (min-width: 1080px) {
   .lower-footer {
-    padding-bottom: 80px;
+    padding-bottom: 140px;
   }
 }
 
@@ -6390,7 +6392,7 @@ footer .footer-logo {
 
 .copyright,
 .rm-sig {
-  display: inline-block;
+  display: block;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   color: #282828;
@@ -6449,6 +6451,10 @@ footer .footer-logo {
   color: #000000;
   margin: 0;
   margin-bottom: 20px;
+}
+
+.contact-us .type-submitbutton {
+  margin-top: 20px;
 }
 
 .contact-us h2 {
@@ -6722,6 +6728,10 @@ footer .footer-logo {
     font-size: 50px;
     line-height: 46px;
   }
+}
+
+.welcome .welcome-cta p {
+  padding-top: 30px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -8383,7 +8393,7 @@ footer .footer-logo {
   width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1080px) {
   .tmpl_type_rmg_single_case .img-wrap {
     width: calc(100% - 420px);
   }
@@ -8400,12 +8410,14 @@ footer .footer-logo {
 }
 
 .tmpl_type_rmg_single_case .img-wrap > div:nth-last-of-type(2) .bna-label, .tmpl_type_rmg_single_case .img-wrap > div:nth-last-of-type(1) .bna-label {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", serif;
   position: absolute;
   display: block;
   width: 100%;
   text-align: center;
   color: #085287;
+  font-size: 1.4em;
+  margin-top: 10px;
 }
 
 .tmpl_type_rmg_single_case .img-wrap .bna-label {
@@ -8458,6 +8470,7 @@ footer .footer-logo {
   padding: 30px 0 20px 0;
   font-size: 14px;
   line-height: 20px;
+  margin-top: 20px;
 }
 
 .tmpl_type_rmg_single_case .patient-details br {
@@ -8467,19 +8480,30 @@ footer .footer-logo {
 @media only screen and (min-width: 768px) {
   .tmpl_type_rmg_single_case .patient-details {
     padding: 30px 35px 20px 35px;
-    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .tmpl_type_rmg_single_case .patient-details {
     margin-left: 20px;
+    width: 400px;
   }
 }
 
 .tmpl_type_rmg_single_case .patient-details span {
   font-family: "Lora", serif;
   color: #085287;
-  font-size: 35px;
+  font-size: 25px;
   padding-bottom: 20px;
   display: block;
   border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .tmpl_type_rmg_single_case .patient-details span {
+    font-size: 35px;
+  }
 }
 
 .notice-body-everything h2,
@@ -8546,6 +8570,16 @@ footer .footer-logo {
   }
 }
 
+.gallery-nav .gallery-button {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .gallery-nav .gallery-button {
+    display: block;
+  }
+}
+
 .single-case-title {
   color: #707479;
   font-size: 18px;
@@ -8561,12 +8595,6 @@ footer .footer-logo {
   .single-case-title {
     font-size: 24px;
   }
-}
-
-.backtogal a,
-.button-gallery-prev,
-.button-gallery-next {
-  background: #ffcd4e;
 }
 
 .button-gallery-prev {

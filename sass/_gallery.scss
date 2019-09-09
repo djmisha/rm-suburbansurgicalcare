@@ -331,7 +331,7 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		width: 100%;
-		@include media($tablet) {
+		@include media($desktop) {
 			width: calc(100% - 420px);
 			// width: 60%;
 		}
@@ -346,13 +346,15 @@
 			&:nth-last-of-type(2),
 			&:nth-last-of-type(1) {
 				.bna-label {
-					font-family: $primaryFont;
+					font-family: $secondaryFont;
 					position: absolute;
 					display: block;
 					// bottom:0px;
 					width: 100%;
 					text-align: center;
 					color: $primaryColor;
+					font-size: 1.4em;
+					margin-top: 10px;
 					// text-transform: uppercase;
 					// font-weight: bold;
 					// letter-spacing: 1px;
@@ -389,7 +391,6 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		// justify-content: flex-start;
 	}
 
 	.patient-details {
@@ -398,25 +399,31 @@
 		background: transparent;
 		text-align: left;
 		padding: 30px 0 20px 0;
-		// color: $lightColor;
 		font-size: 14px;
 		line-height: 20px;
+		margin-top: 20px;
 		br {
 			margin-bottom: 30px;
 		}
 		@include media($tablet) {
 			padding: 30px 35px 20px 35px;
-			width: 400px;
+		}
+		@include media($desktop) {
 			margin-left: 20px;
+			width: 400px;
+			
 		}
 		span {
 			font-family: $secondaryFont;
 			color: $primaryColor;
-			font-size: 35px;
+			font-size: 25px;
 			padding-bottom: 20px;
 			display: block;
 			border-bottom: 1px solid #ccc;
 			margin-bottom: 20px;
+			@include media($tablet) {
+				font-size: 35px;
+			}
 		}
 	}
 }
@@ -463,6 +470,13 @@
 	flex-direction: row;
 	width: 100%;
 }
+	.gallery-button {
+		display: none;
+		@include media($tablet) {
+			display: block;
+		}
+	}
+
 }
 
 .single-case-title {
@@ -482,7 +496,7 @@
 .backtogal a, 
 .button-gallery-prev,
 .button-gallery-next {
-	background: $secondaryAlt;
+	// background: $secondaryAlt;
 } 
 
 .button-gallery-prev {

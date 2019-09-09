@@ -144,6 +144,7 @@ footer
 			}
 		}
 		p {
+			padding-top: 30px;
 			@include media($tablet) {
 				max-width: 370px;
 				

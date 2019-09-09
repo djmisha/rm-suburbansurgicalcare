@@ -8,7 +8,7 @@
 	<section class="welcome" id="skiptomaincontent">
 		<div class="welcome-logo">
 			<h1>
-				<a href="<?php bloginfo('url'); ?>"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/logo-header.png" alt=""></a>
+				<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo-header.png" alt="Suburban Surgical Care Specialists, S.C. Kane Center"></a>
 			</h1> 
 		</div>
 		<div class="welcome-cta">

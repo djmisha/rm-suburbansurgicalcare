@@ -52,8 +52,8 @@
 			font-size: 18px;
 		}
 		#four-oh-four-nav-wrap {
-			border-top: 20px solid #4b4b4b;  /* LIGHT color */
-			border-bottom: 20px solid #4b4b4b;  /* LIGHT color */
+			border-top: 20px solid #1dbefa;  /* LIGHT color */
+			border-bottom: 20px solid #1dbefa;  /* LIGHT color */
 			text-align:center;
 			width:100%;
 			background: #fff; /* LINKS background color */
@@ -91,11 +91,11 @@
 			padding: 10px 5px;
 			height:auto;
 			text-decoration: none;
-			color: #4b4b4b;
+			color: #1dbefa;
 		}
 		#four-oh-four-nav-wrap nav ul li a:hover {
 			text-decoration: none;
-			background-color: #4b4b4b;
+			background-color: #1dbefa;
 			color: #fff;
 		}
 		footer {

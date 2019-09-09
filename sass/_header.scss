@@ -85,7 +85,7 @@
 	right: 20px;
 	height: auto;
 	@include media($desktop) {
-		width: 250px;
+		width: 300px;
 		position: absolute;
 		right: calc(50% - 600px);
 		left: auto;
@@ -132,7 +132,10 @@
 /* Inside Page Headers */
 
 .int-header {
-	background: #e7ecef url('images/bg-header.jpg') center center no-repeat;
+	// background: #e7ecef url('images/bg-header.jpg') center center no-repeat;
+	background-color: #e7ecef;
+	background-position: center center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-x: right -240px;
 	height: 180px;
