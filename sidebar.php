@@ -96,18 +96,13 @@
 	</div>
 
 
-
 	<div class="sb-button">
 		<a href="<?php the_field('button_video', 6); ?>">
 			<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/icon-sb-video.png" alt="video icon">
 		</a>
 	</div>
 	<div class="sb-button">
-			<!-- UPDATE LINK URL -->
-			<!-- UPDATE LINK URL -->
-			<!-- UPDATE LINK URL -->
-			<!-- UPDATE LINK URL -->
-		<a href="<?php bloginfo('template_directory'); ?>">
+		<a href="https://suburbansurgicalcarespecialists.bariatricadvantage.com/">
 			<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/icon-sb-shop.png" alt="video icon">
 		</a>
 	</div>

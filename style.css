@@ -5241,7 +5241,7 @@ article p ~ h2 {
   display: block;
   position: relative;
   margin-bottom: 7px;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .interior .content ol > li:before {
@@ -5256,23 +5256,32 @@ article p ~ h2 {
 .interior .content blockquote {
   margin: 40px 0;
   margin-left: -20px;
-  font-family: "Lora", serif;
-  font-size: 18px;
-  line-height: 30px;
+  font-family: "Times New Roman", serif;
+  border-left: 5px solid #e27500;
+  padding-left: 30px;
   font-weight: 100;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  font-size: 18px;
 }
 
 @media only screen and (min-width: 768px) {
   .interior .content blockquote {
     font-size: 22px;
     display: block;
-    margin-bottom: 90px;
-    margin-left: 10px;
+    margin-left: 0px;
   }
 }
 
+.interior .content blockquote strong {
+  display: block;
+  color: #085287;
+  font-weight: normal;
+  padding-top: 20px;
+}
+
 .bnacase-imgset {
+  background: #e3e9ec;
+  border-radius: 4px;
   clear: both;
   margin: 0 auto;
   display: -webkit-box;
@@ -5286,21 +5295,22 @@ article p ~ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 40px 30px;
+  padding: 40px 30px 70px 30px;
   text-align: center;
   text-transform: uppercase;
   margin-top: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   position: relative;
   width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
   .bnacase-imgset {
-    max-width: 600px;
-    margin-top: 100px;
-    margin-bottom: 140px;
-    width: 70%;
+    margin-top: 20px;
+    margin-left: 40px;
+    max-width: 400px;
+    float: right;
+    padding-bottom: 70px;
   }
 }
 
@@ -5311,6 +5321,7 @@ article p ~ h2 {
 
 .bnacase-imgset .before img, .bnacase-imgset .after img {
   width: 100%;
+  height: auto;
 }
 
 .mommy-makeover .bnacase-imgset .before img,
@@ -5330,7 +5341,8 @@ article p ~ h2 {
 }
 
 .bnacase-imgset .before span, .bnacase-imgset .after span {
-  color: #707479;
+  color: #085287;
+  font-family: "Lora", serif;
   text-transform: none;
   font-size: 14px;
   text-align: left;
@@ -5346,22 +5358,23 @@ article p ~ h2 {
 
 .bnacase-imgset div.view-case {
   position: absolute;
-  bottom: -40px;
+  bottom: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .bnacase-imgset div.view-case {
+    bottom: 20px;
+  }
 }
 
 .bnacase-imgset div.view-case a.button {
-  margin-top: 40px;
   cursor: pointer;
   display: inline-block;
   position: relative;
   text-align: center;
-  text-decoration: none !important;
-  color: #000000;
-  text-transform: uppercase;
 }
 
 .bnacase-imgset div.view-case a.button:hover {
-  color: #ffffff;
   text-decoration: none;
 }
 
@@ -6057,16 +6070,16 @@ aside li {
 }
 
 .upper-footer {
-  background-color: #1d2a33;
+  background-color: #2b3944;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 @media only screen and (min-width: 768px) {
   .upper-footer {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -6124,14 +6137,7 @@ aside li {
   margin: 0 auto;
   color: #ffffff;
   line-height: 14px;
-  margin-bottom: 10px;
-}
-
-@media only screen and (min-width: 1080px) {
-  .upper-footer form .disclaimer {
-    padding-left: 180px;
-    padding-right: 180px;
-  }
+  margin-top: 10px;
 }
 
 /* FOOTER ADDRESSES */
@@ -6468,6 +6474,10 @@ footer .footer-logo {
   border: 1px solid #d4d4d4 !important;
 }
 
+.contact-us .disclaimer {
+  padding-top: 10px;
+}
+
 .contact-us .content {
   width: 100% !important;
   padding-right: 0;
@@ -6607,7 +6617,7 @@ footer .footer-logo {
   background: #fff url("images/bg-welcome.jpg") top center no-repeat;
   background-position-x: -1250px;
   background-position-y: 120px;
-  height: 687px;
+  height: 787px;
   position: relative;
   overflow: hidden;
 }
@@ -6627,6 +6637,13 @@ footer .footer-logo {
     height: 930px;
     min-height: 930px;
   }
+}
+
+.is--pad .welcome {
+  display: block;
+  background: #fff url("images/bg-welcome.jpg") top center no-repeat;
+  background-position-x: right -250px;
+  background-size: cover;
 }
 
 .welcome .welcome-logo {
@@ -6664,9 +6681,27 @@ footer .footer-logo {
   margin: 0;
 }
 
+.welcome .welcome-logo img {
+  width: 100%;
+  max-width: 300px;
+}
+
+@media only screen and (min-width: 768px) {
+  .welcome .welcome-logo img {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .welcome .welcome-logo img {
+    width: auto;
+    max-width: none;
+  }
+}
+
 .welcome .welcome-cta {
   text-align: left;
-  padding-top: 280px;
+  padding-top: 340px;
   max-width: 300px;
 }
 
@@ -7079,7 +7114,7 @@ footer .footer-logo {
 
 @media only screen and (min-width: 768px) {
   .home-weight .icon-scale {
-    width: 400px;
+    width: 350px;
   }
 }
 
@@ -7098,10 +7133,10 @@ footer .footer-logo {
 @media only screen and (min-width: 768px) {
   .home-weight .icon-patient {
     width: auto;
-    width: 390px;
+    width: 370px;
     margin: 0;
     position: absolute;
-    right: calc(50% - 420px);
+    right: calc(50% - 380px);
     display: block;
     top: 100px;
   }
@@ -7168,7 +7203,7 @@ footer .footer-logo {
   .home-orbera img {
     margin-bottom: 0px;
     position: absolute;
-    width: 400px;
+    width: 380px;
     left: 50%;
     top: calc(50% - 200px);
   }

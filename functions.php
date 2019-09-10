@@ -240,8 +240,8 @@ if( function_exists('acf_add_options_page') ) {
 	$page = acf_add_options_page(array(
 		// 'page_title' 	=> $siteName,
 		// 'menu_title' 	=> $siteName,
-		'page_title' 	=> 'RM Theme',
-		'menu_title' 	=> 'RM Theme',
+		'page_title' 	=> 'RM Settings',
+		'menu_title' 	=> 'RM Settings',
 		'menu_slug' 	=> 'theme-general-settings',
 		'capability' 	=> 'edit_posts',
 		'redirect' 	=> false,
@@ -329,8 +329,8 @@ ob_start();  ?>
   <?php wp_list_pages(
     array(
      'title_li' => '',
-     'exclude' => $atts['omit'],
-     'depth' => $atts['depth']
+     // 'exclude' => $atts['omit'],
+     // 'depth' => $atts['depth']
    ) ); ?>
   </ul>
 <?php

@@ -96,14 +96,14 @@
 }
 
 .upper-footer {
-	background-color: #1d2a33;
+	background-color: #2b3944;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	background-position: center center;
-	background-repeat: no-repeat; 
-	background-size: cover;
 
 	@include media($tablet) {
+		background-position: center center;
+		background-repeat: no-repeat; 
+		background-size: cover;
 		padding-top: 120px;
 		padding-bottom: 120px;
 	}
@@ -147,10 +147,11 @@
 			// max-width: 600px;
 			color: $lightColor;
 			line-height: 14px;
-			margin-bottom: 10px;
+			margin-top: 10px;
+			// margin-bottom: 10px;
 			@include media($desktop) {
-				padding-left: 180px;
-				padding-right: 180px;
+				// padding-left: 180px;
+				// padding-right: 180px;
 			}
 		}
 	}

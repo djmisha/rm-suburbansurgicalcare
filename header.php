@@ -92,10 +92,13 @@
 		<h1>Before &amp; After Gallery</h1>
 	<?php elseif (is_search()): ?>
 		<div class="heading-text">Search Results</div>
+
 	<?php elseif (is_home() or is_archive()): ?>
 		<div class="heading-text">Blog</div>
 	<?php elseif (is_single()): ?>
 		<div class="heading-text">Blog</div>
+	<?php elseif ( get_post_type( get_the_ID()) == 'news-room'  ): ?>
+		<div class="heading-text">News Room</div>
 	<?php else: ?>
 		<h1><?php the_title();?></h1>
 	<?php endif; ?>

@@ -54,7 +54,7 @@ footer
 	background-position-x: -1250px; 
 	// background-position: center;
 	background-position-y:  120px; 
-	height: 687px;
+	height: 787px;
 	position: relative;
 	overflow: hidden;
 	@include media(600px) {
@@ -65,12 +65,23 @@ footer
 		background-position-x: right -250px; 
 		background-size: cover;
 		height: 720px;
+
 	}
 	@include media($desktop) {
 		background: none;
 		height: 930px;
 		min-height: 930px;
 	}
+
+
+	.is--pad & {
+		display: block;
+		background: #fff url("images/bg-welcome.jpg") top center no-repeat;
+		background-position-x: right -250px; 
+		background-size: cover;
+
+	}
+	
 
 	.welcome-logo {
 		padding-top: 70px;
@@ -98,10 +109,21 @@ footer
 		h1 {
 			margin: 0;
 		}
+		img {
+			width: 100%;
+			max-width: 300px;
+			@include media($tablet) {
+			max-width: 400px;
+			}
+			@include media($desktop) {
+				width: auto;
+				max-width: none;
+			}
+		}
 	}
 	.welcome-cta {
 		text-align: left;
-		padding-top: 280px;
+		padding-top: 340px;
 		max-width: 300px;
 		@include media($tablet) {
 			max-width: 400px;
@@ -390,7 +412,7 @@ footer
 	.icon-scale {
 		display: block;
 		@include media($tablet) {
-			width: 400px;
+			width: 350px;
 		}
 		@include media($desktop) {
 			width: auto;
@@ -403,10 +425,10 @@ footer
 		margin-bottom: 40px;
 		@include media($tablet) {
 			width: auto;
-			width: 390px;
+			width: 370px;
 			margin: 0;
 			position: absolute;
-			right: calc(50% - 420px);
+			right: calc(50% - 380px);
 			display: block;
 			top: 100px;
 		}
@@ -456,7 +478,7 @@ footer
 		@include media($tablet) {
 			margin-bottom: 0px;
 			position: absolute;
-			width: 400px;
+			width: 380px;
 			left: 50%;
 			top: calc(50% - 200px);
 		}

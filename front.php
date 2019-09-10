@@ -15,7 +15,7 @@
 			<h2><?php the_field('welcome_headline'); ?></h2>
 			<?php the_field('welcome_content'); ?>
 			<a href="<?php the_field('learn_more_button'); ?>" class="button" rel="nofollow">Learn More</a>
-			<a href="schedule_a_consultation_button" class="button" rel="nofollow">Schedule a Consultation</a>
+			<a href="<?php the_field('schedule_a_consultation_button'); ?>" class="button" rel="nofollow">Schedule a Consultation</a>
 			<div class="overlay"></div>
 		</div>
 	</section>
@@ -36,7 +36,7 @@
 		</div>
 	</div>
 	<div class="icon-video">
-		<a href="<?php the_field('button_video'); ?>">
+		<a href="<?php bloginfo('url'); ?>/bariatric-surgery/videos/">
 			<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/icon-video.png" alt="video icon">
 		</a>
 	</div>
@@ -55,7 +55,7 @@
 		<h2><?php the_field('about_headline_2'); ?></h2>
 		<span class="about-sub-head"><?php the_field('about_sub_headline_2'); ?></span>
 		<?php the_field('about_content_2'); ?>
-		<a href="<?php the_field('learn_more_button'); ?>" rel="nofollow" class="button">Learn More</a>
+		<a href="<?php the_field('learn_more_button_about'); ?>" rel="nofollow" class="button">Learn More</a>
 		<a href="<?php the_field('view_patient_gallery_button'); ?>" rel="nofollow" class="button">View Patient Gallery</a>
 	</div>
 </section>
@@ -159,7 +159,6 @@
 			<li>
 				<a href="<?the_permalink();?>" rel="nofollow">
 					<span class="news-head"><?php the_title(); ?></span>
-					<div class="news-thumb"><?php the_post_thumbnail('thumbnail', array( 'alt' => trim(strip_tags( $post->post_title )),)); ?></div>
 					<?php my_excerpt(15); ?>
 					<span class="button">Learn More</span>
 				</a>
