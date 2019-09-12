@@ -97,12 +97,12 @@
 
 
 	<div class="sb-button">
-		<a href="<?php the_field('button_video', 6); ?>">
+		<a href="<?php bloginfo('url'); ?>/bariatric-surgery/videos/">
 			<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/icon-sb-video.png" alt="video icon">
 		</a>
 	</div>
 	<div class="sb-button">
-		<a href="https://suburbansurgicalcarespecialists.bariatricadvantage.com/">
+		<a href="https://suburbansurgicalcarespecialists.bariatricadvantage.com/" target="_blank" rel="noopener nofollow">
 			<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/icon-sb-shop.png" alt="video icon">
 		</a>
 	</div>

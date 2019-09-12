@@ -17,7 +17,7 @@
 	<div class="bar-or">or</div>
 	<div class="bar-buttons button-patient">
 		<?php inline_svg('icon-patient'); ?>
-		<a href="https://mypay.poscorp.com/suburbansurgicalcare#/account/login" class="button" rel="nofollow noopener">Patient Portal</a>
+		<a href="https://mypay.poscorp.com/suburbansurgicalcare#/account/login" class="button" rel="nofollow noopener" target="_blank">Patient Portal</a>
 	</div>
 </section>
 
@@ -85,7 +85,7 @@
 	<section class="lower-footer">
 		<div class="reviews_markup"><?php do_action('reviews_markup'); ?></div>
 		<div class="disclaimer">* Stock model images are used throughout this website and are for illustrative purposes only. All before-and-after photos and patient testimonials on our site are from actual patients, and have been published with permission. Individual results may vary.</div>
-		<div class="copyright">Copyright &copy; <?=date("Y")?> <?php bloginfo('title');?>. All rights reserved | <a href="<?php bloginfo('url'); ?>/privacy-policy">Privacy Policy</a> | <a href="<?php bloginfo('url'); ?>/sitemap/" title="Sitemap">Sitemap</a> </div>
+		<div class="copyright">Copyright &copy; <?=date("Y")?> <?php bloginfo('title');?>. All rights reserved | <a href="<?php bloginfo('url'); ?>/privacy-policy">Privacy Policy</a> | <a href="<?php bloginfo('url'); ?>/sitemap/" title="Sitemap">Sitemap</a><br> <a href="<?php bloginfo('url'); ?>/illinois/" title="Weight Loss Surgery in Nearby Cities">Weight Loss Surgery in Nearby Cities</a> </div>
 		<div class="rm-sig"><a href="<?php the_field('rm_footer_link', 'options'); ?>" target="_blank" rel="noopener" title="<?php the_field('rm_footer_text', 'options'); ?>"><?php the_field('rm_footer_text', 'options'); ?></a> by <a href="https://www.rosemontmedia.com/" title="Rosemont Media" target="_blank" rel="noopener">Rosemont Media</a></div>
 
 		<div class="rm-logo"><a href="https://www.rosemontmedia.com/" title="Rosemont Media" target="_blank" rel="noopener">
@@ -100,9 +100,18 @@
 <?php wp_footer();?>
 
 
+<!-- Start Of NGage -->
+<div id="nGageLH" style="visibility:hidden; display: block; padding: 0; position: fixed; right: 0px; bottom: 0px; z-index: 5000;" onClick="recordOutboundLink(this, 'NGage', 'Clicked');"></div>
+<script type="text/javascript" src="https://messenger.ngageics.com/ilnksrvr.aspx?websiteid=101-176-0-148-28-190-56-35" async="async"></script>
+<!-- End Of NGage -->
+
+
 <script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://HOST:35730/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
 //]]></script>
+
+
+
 
 
 </body>

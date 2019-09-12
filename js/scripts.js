@@ -84,6 +84,13 @@
 			}
 		});
 
+		// Change News Room 
+
+		var newsroom = document.querySelector('body.news-room h1 ');
+		console.log(newsroom);
+		if(newsroom) {
+			newsroom.innerText = 'News Room'; 
+		}
 
 		/*=============================================
 		=            Gallery Nudity Pop Up            =

@@ -4,7 +4,7 @@
 
 <?php get_header()?>
 
-<div class="welcome-parallax will-parallax parallax-welcome b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-welcome.jpg">
+<div class="welcome-parallax will-parallax parallax-welcome">
 	<section class="welcome" id="skiptomaincontent">
 		<div class="welcome-logo">
 			<h1>
@@ -157,7 +157,7 @@
 				
 				foreach ($postslist as $post) :  setup_postdata($post); ?>
 			<li>
-				<a href="<?the_permalink();?>" rel="nofollow">
+				<a href="<?php the_permalink();?>" rel="nofollow">
 					<span class="news-head"><?php the_title(); ?></span>
 					<?php my_excerpt(15); ?>
 					<span class="button">Learn More</span>

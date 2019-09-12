@@ -2,6 +2,7 @@
 
 <section class="interior">
 	<article class="content">
+		<?php the_archive_description(); ?><br/>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post();?>
 			<article class="post-snippet">
 				<div class="excerpt">

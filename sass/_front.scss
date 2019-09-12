@@ -17,7 +17,6 @@ footer
 	// display: none !important;
 }
 
-
 .home h2 {
 	font-family: $secondaryFont;
 	color: $primaryColor;
@@ -42,6 +41,8 @@ footer
 
 .welcome-parallax {
 	@include media($desktop) {
+		background: #fff url("images/bg-welcome.jpg") center center no-repeat;
+
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
@@ -61,11 +62,16 @@ footer
 		// background-position-x: right 0px; 
 	}
 	@include media($tablet) {
-		background: #fff url("images/bg-welcome.jpg") top center no-repeat;
-		background-position-x: right -250px; 
+		background: #fff url("images/bg-welcome.jpg") top right no-repeat;
+		background-position-x: -500px; 
 		background-size: cover;
 		height: 720px;
-
+	}
+	@include media(860px) {
+		background: #fff url("images/bg-welcome.jpg") top right no-repeat;
+		background-position-x: -400px; 
+		background-size: cover;
+		height: 720px;
 	}
 	@include media($desktop) {
 		background: none;
@@ -75,10 +81,10 @@ footer
 
 
 	.is--pad & {
-		display: block;
-		background: #fff url("images/bg-welcome.jpg") top center no-repeat;
-		background-position-x: right -250px; 
-		background-size: cover;
+		// display: block;
+		// background: #fff url("images/bg-welcome.jpg") top center no-repeat;
+		// background-position-x: right -250px; 
+		// background-size: cover;
 
 	}
 	
@@ -212,6 +218,7 @@ footer
 			justify-content: space-between;
 			align-items: center;
 			margin-top: -160px;
+			height: 164px;
 		}
 	span {
 		font-family: $secondaryFont;
@@ -451,9 +458,15 @@ footer
 	padding-top: 40px;
 	padding-bottom: 40px;
 	background-size: cover;
-	background-position: center;
+	background-position: bottom center;
 	position: relative;
 	min-height: 660px;
+	background-size: 1300px auto;
+	background-repeat: no-repeat;
+	@include media($tablet) {
+		background-size: cover;
+		background-position: center center;
+	}
 	h2 {
 		color: $secondaryColor;
 		span {
@@ -516,8 +529,9 @@ footer
 	padding-top: 40px;
 	padding-bottom: 40px;
 	background-position: center right;
-	background-position-x: right -200px;
+	background-position-x: -1000px;
 	@include media($tablet) {
+	background-position: center right;
 		padding-top: 120px;
 		padding-bottom: 120px;
 		background-size: cover;
