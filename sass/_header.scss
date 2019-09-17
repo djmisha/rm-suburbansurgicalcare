@@ -152,7 +152,15 @@
 		background-size: cover;
 		height: 400px;
 	}
-	@include media($desktop) {
+	.page-59 & {
+		background-position-x: right -140px;
+		@include media($tablet) {
+			background-position: center right;
+			background-position-x: right -440px;
+		}
+		@include media($desktop) {
+			background-position: center center;
+		}
 	}
 }
 
@@ -170,6 +178,17 @@
 		width: 200px;
 		@include media($tablet) {
 			width: auto;
+		}
+		.page-59 & {
+			margin-top: -20px;
+			// padding-top: 70px;
+			@include media($tablet) {
+				margin-top: auto;
+				width: 275px;
+			}
+			@include media($desktop) {
+				width: auto;
+			}
 		}
 	}
 }
@@ -190,6 +209,12 @@
 		@include media($tablet) {
 			font-size: 40px;
 			line-height: 40px;
+		}
+	}
+	.page-59 & {
+		display: none;
+		@include media(450px) {
+			display: block;
 		}
 	}
 }
