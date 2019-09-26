@@ -153,10 +153,17 @@
 		height: 400px;
 	}
 	.page-59 & {
-		background-position-x: right -140px;
+		background-position-x: -300px;
+		@include media(320px) {
+
+			background-position-x: -370px;
+		}
+		@include media(667px) {
+			background-position-x: -240px;
+		}
 		@include media($tablet) {
 			background-position: center right;
-			background-position-x: right -440px;
+			background-position-x: -780px;
 		}
 		@include media($desktop) {
 			background-position: center center;
