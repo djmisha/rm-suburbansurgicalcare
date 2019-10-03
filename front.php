@@ -93,9 +93,8 @@
 <section class="home-orbera b-lazy" data-src="<?php bloginfo('template_directory'); ?>/images/bg-orbera.jpg">
 	<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="b-lazy icon-scale" data-src="<?php bloginfo('template_directory'); ?>/images/icon-ball.png" alt="ball">
 	<h2><?php the_field('orbera_headline'); ?></h2>
-	
 	<?php the_field('orbera_content'); ?>
-	<div class="orbera-fee">Free ORBERA&trade; Intragastic Ballon Consultation</div>
+	<div class="orbera-fee">Free ORBERA&trade; Intragastric Balloon Consultation</div>
 	<div class="orbera-call">Call Today 866-716-5263</div>
 	<a href="<?php the_field('orbera_learn_more_button'); ?>" class="button" rel="nofollow">Learn More</a>
 	<a href="<?php the_field('orbera_schedule_button'); ?>" class="button" rel="nofollow">Schedule Consulation</a>

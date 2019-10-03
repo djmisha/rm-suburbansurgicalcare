@@ -68,7 +68,7 @@
 				 	<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo-header.png" alt=""></a>
 				 </a>
 			</div>
-			<div class="inside-tagline">Long Term <span>Weight Loss</span></div>
+			<div class="inside-tagline">Long-Term <span>Weight Loss</span></div>
 		</section>
 	<?php endif; ?>
 

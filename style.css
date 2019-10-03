@@ -4481,12 +4481,10 @@ main,
 }
 
 .nav-bar-locations {
+  display: none;
   position: absolute;
   width: 250;
   background: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -4497,12 +4495,23 @@ main,
   height: auto;
 }
 
+@media only screen and (min-width: 340px) {
+  .nav-bar-locations {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media only screen and (min-width: 1080px) {
   .nav-bar-locations {
     width: 300px;
     position: absolute;
     right: calc(50% - 600px);
     left: auto;
+  }
+  .is--device .nav-bar-locations {
+    right: 20px !important;
   }
 }
 
@@ -4598,7 +4607,7 @@ main,
 @media only screen and (min-width: 768px) {
   .page-59 .int-header {
     background-position: center right;
-    background-position-x: -780px;
+    background-position-x: -700px;
   }
 }
 
