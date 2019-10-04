@@ -4696,6 +4696,49 @@ main,
   }
 }
 
+a.bookbutton {
+  position: absolute;
+  top: 120px;
+  background: #6bcad4;
+  font-weight: bold;
+  right: 0px;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #ffffff;
+  text-decoration: none;
+  z-index: 9999;
+}
+
+@media only screen and (min-width: 768px) {
+  a.bookbutton {
+    right: calc(50% - 300px);
+    top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  a.bookbutton {
+    top: 62px;
+  }
+}
+
+.inside a.bookbutton {
+  top: 60px;
+}
+
+@media only screen and (min-width: 768px) {
+  .inside a.bookbutton {
+    right: calc(50% - 300px);
+    top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .inside a.bookbutton {
+    top: 62px;
+  }
+}
+
 /* ------------------------
 	Nav
 ------------------------ */

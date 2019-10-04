@@ -230,3 +230,35 @@
 		}
 	}
 }
+
+
+
+a.bookbutton {
+	position: absolute;
+	top: 120px;
+	background: #6bcad4;
+	font-weight: bold;
+	right: 0px;
+	display: inline-block;
+	padding: 10px 15px;
+	color: $lightColor;
+	text-decoration: none;
+	z-index: 9999;
+	@include media($tablet) {
+		right: calc(50% - 300px;) ;
+		top: 60px;
+	}
+	@include media($desktop) {
+		top: 62px;
+	}
+	.inside & {
+		top: 60px;
+		@include media($tablet) {
+			right: calc(50% - 300px;) ;
+			top: 60px;
+		}
+		@include media($desktop) {
+			top: 62px;
+		}
+	}
+}

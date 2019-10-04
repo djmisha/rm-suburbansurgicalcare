@@ -4,6 +4,10 @@
 
 <?php get_header()?>
 
+
+
+
+
 <div class="welcome-parallax will-parallax parallax-welcome">
 	<section class="welcome" id="skiptomaincontent">
 		<div class="welcome-logo">

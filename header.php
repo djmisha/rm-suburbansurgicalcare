@@ -61,6 +61,12 @@
 		</div>
 	</div>
 
+
+	<a class="bookbutton" target="_blank" href="https://healow.com/apps/practice/welome-to-suburban-surgical-care-specialistskane-center-1277" class="healow_oa_schedule">
+		Book an Appointment
+	</a>
+
+
 	<?php if(!is_front_page()): // Inside Page Logo ?>
 		<section>
 			<div class="inside-logo">
