@@ -245,10 +245,11 @@ a.bookbutton {
 	text-decoration: none;
 	z-index: 9999;
 	@include media($tablet) {
-		right: calc(50% - 300px;) ;
+		right: calc(50% - 180px;) ;
 		top: 60px;
 	}
 	@include media($desktop) {
+		right: calc(50% - 480px;) ;
 		top: 62px;
 	}
 	.inside & {
